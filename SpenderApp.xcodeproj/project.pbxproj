@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684282A4DB52B0020D86C /* AppDelegate.swift */; };
+		EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */; };
+		EF9684322A4DB52C0020D86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9684312A4DB52C0020D86C /* Assets.xcassets */; };
+		EF9684352A4DB52C0020D86C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9684332A4DB52C0020D86C /* LaunchScreen.storyboard */; };
+		EF96844F2A4DB68E0020D86C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96844E2A4DB68E0020D86C /* SplashViewController.swift */; };
+		EF9684512A4DB69B0020D86C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684502A4DB69B0020D86C /* MainViewController.swift */; };
+		EF9684532A4DB6AC0020D86C /* DashboradViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684522A4DB6AC0020D86C /* DashboradViewController.swift */; };
+		EF9684552A4DB6B90020D86C /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684542A4DB6B90020D86C /* GoalsViewController.swift */; };
+		EF9684572A4DB6C70020D86C /* SpendAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684562A4DB6C70020D86C /* SpendAnalysisViewController.swift */; };
+		EF9684592A4DB6D40020D86C /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684582A4DB6D40020D86C /* TransferViewController.swift */; };
+		EF96845B2A4DB6E40020D86C /* PayBillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96845A2A4DB6E40020D86C /* PayBillsViewController.swift */; };
+		EF96845D2A4DB6ED0020D86C /* DepositCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96845C2A4DB6ED0020D86C /* DepositCheckViewController.swift */; };
+		EF96845F2A4DB6F70020D86C /* RecipientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96845E2A4DB6F70020D86C /* RecipientsViewController.swift */; };
+		EF9684612A4DB7040020D86C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684602A4DB7040020D86C /* ProfileViewController.swift */; };
+		EF9684632A4DB70D0020D86C /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684622A4DB70D0020D86C /* SupportViewController.swift */; };
+		EF9684652A4DB7160020D86C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684642A4DB7160020D86C /* SettingsViewController.swift */; };
+		EF9684672A4DB71F0020D86C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684662A4DB71F0020D86C /* LoginViewController.swift */; };
+		EF96846A2A4DB7580020D86C /* SideBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684692A4DB7580020D86C /* SideBarTableViewCell.swift */; };
+		EF96846C2A4DB76E0020D86C /* BankingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96846B2A4DB76D0020D86C /* BankingCollectionViewCell.swift */; };
+		EF96846E2A4DB7790020D86C /* CreditUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96846D2A4DB7790020D86C /* CreditUICollectionViewCell.swift */; };
+		EF9684702A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96846F2A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift */; };
+		EF9684772A4DB7EC0020D86C /* SideBarUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684762A4DB7EC0020D86C /* SideBarUIView.swift */; };
+		EF9684792A4DB7FA0020D86C /* QuickActionsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684782A4DB7FA0020D86C /* QuickActionsUIView.swift */; };
+		EF96847B2A4DB8050020D86C /* BankingUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96847A2A4DB8050020D86C /* BankingUIView.swift */; };
+		EF96847D2A4DB80E0020D86C /* CreditUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96847C2A4DB80E0020D86C /* CreditUIView.swift */; };
+		EF96847F2A4DB81B0020D86C /* SavingsGoalsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96847E2A4DB81B0020D86C /* SavingsGoalsUIView.swift */; };
+		EF9684812A4DB82D0020D86C /* PinnedGoalsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684802A4DB82D0020D86C /* PinnedGoalsUIView.swift */; };
+		EF9684832A4DB8350020D86C /* GoalsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684822A4DB8350020D86C /* GoalsUIView.swift */; };
+		EF9684852A4DB8570020D86C /* SideBarSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684842A4DB8570020D86C /* SideBarSection.swift */; };
+		EF9684872A4DB86A0020D86C /* Extension+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684862A4DB86A0020D86C /* Extension+CGFloat.swift */; };
+		EF9684892A4DB8720020D86C /* Extension+Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684882A4DB8720020D86C /* Extension+Textfield.swift */; };
+		EF96848B2A4DB87B0020D86C /* Extension+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96848A2A4DB87B0020D86C /* Extension+Cells.swift */; };
+		EF96848D2A4DB8870020D86C /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96848C2A4DB8870020D86C /* Extension+ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF9684252A4DB52B0020D86C /* SpenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9684282A4DB52B0020D86C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EF9684312A4DB52C0020D86C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF9684342A4DB52C0020D86C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF9684362A4DB52C0020D86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF96844E2A4DB68E0020D86C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		EF9684502A4DB69B0020D86C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EF9684522A4DB6AC0020D86C /* DashboradViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboradViewController.swift; sourceTree = "<group>"; };
+		EF9684542A4DB6B90020D86C /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		EF9684562A4DB6C70020D86C /* SpendAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendAnalysisViewController.swift; sourceTree = "<group>"; };
+		EF9684582A4DB6D40020D86C /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		EF96845A2A4DB6E40020D86C /* PayBillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBillsViewController.swift; sourceTree = "<group>"; };
+		EF96845C2A4DB6ED0020D86C /* DepositCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositCheckViewController.swift; sourceTree = "<group>"; };
+		EF96845E2A4DB6F70020D86C /* RecipientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientsViewController.swift; sourceTree = "<group>"; };
+		EF9684602A4DB7040020D86C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EF9684622A4DB70D0020D86C /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		EF9684642A4DB7160020D86C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EF9684662A4DB71F0020D86C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EF9684692A4DB7580020D86C /* SideBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarTableViewCell.swift; sourceTree = "<group>"; };
+		EF96846B2A4DB76D0020D86C /* BankingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF96846D2A4DB7790020D86C /* CreditUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditUICollectionViewCell.swift; sourceTree = "<group>"; };
+		EF96846F2A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsGoalsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF9684762A4DB7EC0020D86C /* SideBarUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarUIView.swift; sourceTree = "<group>"; };
+		EF9684782A4DB7FA0020D86C /* QuickActionsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionsUIView.swift; sourceTree = "<group>"; };
+		EF96847A2A4DB8050020D86C /* BankingUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingUIView.swift; sourceTree = "<group>"; };
+		EF96847C2A4DB80E0020D86C /* CreditUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditUIView.swift; sourceTree = "<group>"; };
+		EF96847E2A4DB81B0020D86C /* SavingsGoalsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsGoalsUIView.swift; sourceTree = "<group>"; };
+		EF9684802A4DB82D0020D86C /* PinnedGoalsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedGoalsUIView.swift; sourceTree = "<group>"; };
+		EF9684822A4DB8350020D86C /* GoalsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsUIView.swift; sourceTree = "<group>"; };
+		EF9684842A4DB8570020D86C /* SideBarSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarSection.swift; sourceTree = "<group>"; };
+		EF9684862A4DB86A0020D86C /* Extension+CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGFloat.swift"; sourceTree = "<group>"; };
+		EF9684882A4DB8720020D86C /* Extension+Textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Textfield.swift"; sourceTree = "<group>"; };
+		EF96848A2A4DB87B0020D86C /* Extension+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Cells.swift"; sourceTree = "<group>"; };
+		EF96848C2A4DB8870020D86C /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF9684222A4DB52B0020D86C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF96841C2A4DB52B0020D86C = {
+			isa = PBXGroup;
+			children = (
+				EF9684272A4DB52B0020D86C /* SpenderApp */,
+				EF9684262A4DB52B0020D86C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF9684262A4DB52B0020D86C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684252A4DB52B0020D86C /* SpenderApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF9684272A4DB52B0020D86C /* SpenderApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF96843D2A4DB5C70020D86C /* Controllers */,
+				EF96843F2A4DB5D40020D86C /* Companents */,
+				EF96843E2A4DB5CF0020D86C /* Cell */,
+				EF9684402A4DB5DD0020D86C /* Helpers */,
+				EF96843C2A4DB5400020D86C /* Resources */,
+				EF9684362A4DB52C0020D86C /* Info.plist */,
+			);
+			path = SpenderApp;
+			sourceTree = "<group>";
+		};
+		EF96843C2A4DB5400020D86C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684282A4DB52B0020D86C /* AppDelegate.swift */,
+				EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */,
+				EF9684312A4DB52C0020D86C /* Assets.xcassets */,
+				EF9684332A4DB52C0020D86C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF96843D2A4DB5C70020D86C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684682A4DB72C0020D86C /* MainViewController */,
+				EF96844D2A4DB6420020D86C /* LoginViewController */,
+				EF9684442A4DB6050020D86C /* GoalsViewController */,
+				EF9684432A4DB6030020D86C /* DashboradViewController */,
+				EF96844C2A4DB6400020D86C /* SettingsViewController */,
+				EF96844B2A4DB63E0020D86C /* SupportViewController */,
+				EF96844A2A4DB6340020D86C /* ProfileViewController */,
+				EF9684492A4DB6310020D86C /* RecipientsViewController */,
+				EF9684482A4DB62E0020D86C /* DepositCheckViewController */,
+				EF9684472A4DB61B0020D86C /* PayBillsViewController */,
+				EF9684462A4DB6190020D86C /* TransferViewController */,
+				EF9684452A4DB6080020D86C /* SpendAnalysisViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EF96843E2A4DB5CF0020D86C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684712A4DB79A0020D86C /* TableViewCells */,
+				EF9684722A4DB7A30020D86C /* CollectionViewCells */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EF96843F2A4DB5D40020D86C /* Companents */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684732A4DB7BD0020D86C /* SideBar */,
+				EF9684742A4DB7C20020D86C /* DashboardView */,
+				EF9684752A4DB7C50020D86C /* GoalsView */,
+			);
+			path = Companents;
+			sourceTree = "<group>";
+		};
+		EF9684402A4DB5DD0020D86C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684422A4DB5F20020D86C /* Enums */,
+				EF9684412A4DB5E70020D86C /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EF9684412A4DB5E70020D86C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684862A4DB86A0020D86C /* Extension+CGFloat.swift */,
+				EF9684882A4DB8720020D86C /* Extension+Textfield.swift */,
+				EF96848A2A4DB87B0020D86C /* Extension+Cells.swift */,
+				EF96848C2A4DB8870020D86C /* Extension+ViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF9684422A4DB5F20020D86C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684842A4DB8570020D86C /* SideBarSection.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		EF9684432A4DB6030020D86C /* DashboradViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684522A4DB6AC0020D86C /* DashboradViewController.swift */,
+			);
+			path = DashboradViewController;
+			sourceTree = "<group>";
+		};
+		EF9684442A4DB6050020D86C /* GoalsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684542A4DB6B90020D86C /* GoalsViewController.swift */,
+			);
+			path = GoalsViewController;
+			sourceTree = "<group>";
+		};
+		EF9684452A4DB6080020D86C /* SpendAnalysisViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684562A4DB6C70020D86C /* SpendAnalysisViewController.swift */,
+			);
+			path = SpendAnalysisViewController;
+			sourceTree = "<group>";
+		};
+		EF9684462A4DB6190020D86C /* TransferViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684582A4DB6D40020D86C /* TransferViewController.swift */,
+			);
+			path = TransferViewController;
+			sourceTree = "<group>";
+		};
+		EF9684472A4DB61B0020D86C /* PayBillsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF96845A2A4DB6E40020D86C /* PayBillsViewController.swift */,
+			);
+			path = PayBillsViewController;
+			sourceTree = "<group>";
+		};
+		EF9684482A4DB62E0020D86C /* DepositCheckViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF96845C2A4DB6ED0020D86C /* DepositCheckViewController.swift */,
+			);
+			path = DepositCheckViewController;
+			sourceTree = "<group>";
+		};
+		EF9684492A4DB6310020D86C /* RecipientsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF96845E2A4DB6F70020D86C /* RecipientsViewController.swift */,
+			);
+			path = RecipientsViewController;
+			sourceTree = "<group>";
+		};
+		EF96844A2A4DB6340020D86C /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684602A4DB7040020D86C /* ProfileViewController.swift */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		EF96844B2A4DB63E0020D86C /* SupportViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684622A4DB70D0020D86C /* SupportViewController.swift */,
+			);
+			path = SupportViewController;
+			sourceTree = "<group>";
+		};
+		EF96844C2A4DB6400020D86C /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684642A4DB7160020D86C /* SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		EF96844D2A4DB6420020D86C /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684662A4DB71F0020D86C /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		EF9684682A4DB72C0020D86C /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF96844E2A4DB68E0020D86C /* SplashViewController.swift */,
+				EF9684502A4DB69B0020D86C /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		EF9684712A4DB79A0020D86C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684692A4DB7580020D86C /* SideBarTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		EF9684722A4DB7A30020D86C /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EF96846B2A4DB76D0020D86C /* BankingCollectionViewCell.swift */,
+				EF96846D2A4DB7790020D86C /* CreditUICollectionViewCell.swift */,
+				EF96846F2A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		EF9684732A4DB7BD0020D86C /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684762A4DB7EC0020D86C /* SideBarUIView.swift */,
+			);
+			path = SideBar;
+			sourceTree = "<group>";
+		};
+		EF9684742A4DB7C20020D86C /* DashboardView */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684782A4DB7FA0020D86C /* QuickActionsUIView.swift */,
+				EF96847A2A4DB8050020D86C /* BankingUIView.swift */,
+				EF96847C2A4DB80E0020D86C /* CreditUIView.swift */,
+				EF96847E2A4DB81B0020D86C /* SavingsGoalsUIView.swift */,
+			);
+			path = DashboardView;
+			sourceTree = "<group>";
+		};
+		EF9684752A4DB7C50020D86C /* GoalsView */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684802A4DB82D0020D86C /* PinnedGoalsUIView.swift */,
+				EF9684822A4DB8350020D86C /* GoalsUIView.swift */,
+			);
+			path = GoalsView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF9684242A4DB52B0020D86C /* SpenderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9684392A4DB52C0020D86C /* Build configuration list for PBXNativeTarget "SpenderApp" */;
+			buildPhases = (
+				EF9684212A4DB52B0020D86C /* Sources */,
+				EF9684222A4DB52B0020D86C /* Frameworks */,
+				EF9684232A4DB52B0020D86C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpenderApp;
+			productName = SpenderApp;
+			productReference = EF9684252A4DB52B0020D86C /* SpenderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF96841D2A4DB52B0020D86C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EF9684242A4DB52B0020D86C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EF9684202A4DB52B0020D86C /* Build configuration list for PBXProject "SpenderApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF96841C2A4DB52B0020D86C;
+			productRefGroup = EF9684262A4DB52B0020D86C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF9684242A4DB52B0020D86C /* SpenderApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF9684232A4DB52B0020D86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9684352A4DB52C0020D86C /* LaunchScreen.storyboard in Resources */,
+				EF9684322A4DB52C0020D86C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF9684212A4DB52B0020D86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF96844F2A4DB68E0020D86C /* SplashViewController.swift in Sources */,
+				EF9684812A4DB82D0020D86C /* PinnedGoalsUIView.swift in Sources */,
+				EF9684892A4DB8720020D86C /* Extension+Textfield.swift in Sources */,
+				EF9684572A4DB6C70020D86C /* SpendAnalysisViewController.swift in Sources */,
+				EF96846A2A4DB7580020D86C /* SideBarTableViewCell.swift in Sources */,
+				EF9684632A4DB70D0020D86C /* SupportViewController.swift in Sources */,
+				EF9684672A4DB71F0020D86C /* LoginViewController.swift in Sources */,
+				EF9684872A4DB86A0020D86C /* Extension+CGFloat.swift in Sources */,
+				EF96847B2A4DB8050020D86C /* BankingUIView.swift in Sources */,
+				EF9684852A4DB8570020D86C /* SideBarSection.swift in Sources */,
+				EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */,
+				EF96845F2A4DB6F70020D86C /* RecipientsViewController.swift in Sources */,
+				EF9684792A4DB7FA0020D86C /* QuickActionsUIView.swift in Sources */,
+				EF9684592A4DB6D40020D86C /* TransferViewController.swift in Sources */,
+				EF96845D2A4DB6ED0020D86C /* DepositCheckViewController.swift in Sources */,
+				EF9684612A4DB7040020D86C /* ProfileViewController.swift in Sources */,
+				EF96848D2A4DB8870020D86C /* Extension+ViewController.swift in Sources */,
+				EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */,
+				EF96847F2A4DB81B0020D86C /* SavingsGoalsUIView.swift in Sources */,
+				EF9684652A4DB7160020D86C /* SettingsViewController.swift in Sources */,
+				EF96846E2A4DB7790020D86C /* CreditUICollectionViewCell.swift in Sources */,
+				EF9684512A4DB69B0020D86C /* MainViewController.swift in Sources */,
+				EF96847D2A4DB80E0020D86C /* CreditUIView.swift in Sources */,
+				EF96846C2A4DB76E0020D86C /* BankingCollectionViewCell.swift in Sources */,
+				EF9684702A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift in Sources */,
+				EF96845B2A4DB6E40020D86C /* PayBillsViewController.swift in Sources */,
+				EF9684772A4DB7EC0020D86C /* SideBarUIView.swift in Sources */,
+				EF9684532A4DB6AC0020D86C /* DashboradViewController.swift in Sources */,
+				EF9684552A4DB6B90020D86C /* GoalsViewController.swift in Sources */,
+				EF9684832A4DB8350020D86C /* GoalsUIView.swift in Sources */,
+				EF96848B2A4DB87B0020D86C /* Extension+Cells.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF9684332A4DB52C0020D86C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF9684342A4DB52C0020D86C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF9684372A4DB52C0020D86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF9684382A4DB52C0020D86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF96843A2A4DB52C0020D86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75RG469FX3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpenderApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HalilBkar.SpenderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF96843B2A4DB52C0020D86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75RG469FX3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpenderApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HalilBkar.SpenderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF9684202A4DB52B0020D86C /* Build configuration list for PBXProject "SpenderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9684372A4DB52C0020D86C /* Debug */,
+				EF9684382A4DB52C0020D86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9684392A4DB52C0020D86C /* Build configuration list for PBXNativeTarget "SpenderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF96843A2A4DB52C0020D86C /* Debug */,
+				EF96843B2A4DB52C0020D86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF96841D2A4DB52B0020D86C /* Project object */;
+}
