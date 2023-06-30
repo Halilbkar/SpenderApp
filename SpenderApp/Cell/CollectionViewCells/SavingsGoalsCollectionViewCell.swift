@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import DGCharts
 
 class SavingsGoalsCollectionViewCell: UICollectionViewCell {
     
@@ -75,6 +76,16 @@ class SavingsGoalsCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
+    private lazy var chartsView: PieChartView = {
+        let charts = PieChartView()
+        
+        
+        
+        charts.translatesAutoresizingMaskIntoConstraints = false
+        
+        return charts
+    }()
+    
     override init(frame: CGRect) {
         super .init(frame: frame)
         
@@ -87,6 +98,11 @@ class SavingsGoalsCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(daysLabel)
         contentView.addSubview(savedLabel)
         contentView.addSubview(leftLabel)
+        contentView.addSubview(chartsView)
+        
+        ChartsManager.shared.configurePieChart(chartsView, lineWidth: 2)
+        let data = ChartsManager.shared.createPieChartData(value: 20, emptyValue: 80)
+        chartsView.data = data
     }
     
     override func layoutSubviews() {
@@ -111,7 +127,12 @@ class SavingsGoalsCollectionViewCell: UICollectionViewCell {
             savedLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
             
             leftLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
-            leftLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: CGFloat.dHeight(padding: -16))
+            leftLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: CGFloat.dHeight(padding: -16)),
+            
+            chartsView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 8)),
+            chartsView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
+            chartsView.widthAnchor.constraint(equalToConstant: CGFloat.dWidth(padding: 96)),
+            chartsView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 96))
             
         ])
     }

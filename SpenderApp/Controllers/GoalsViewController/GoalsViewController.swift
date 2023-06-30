@@ -19,26 +19,10 @@ class GoalsViewController: UIViewController {
 
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         
-        segmentedControl.addTarget(self, action: #selector(segmentedControlTapped(sender:)), for: .touchUpInside)
+        segmentedControl.addTarget(self, action: #selector(segmentedControlTapped(sender:)), for: .valueChanged)
         
         return segmentedControl
     }()
-    
-//    private lazy var savingsGoalsUIView: UIView = {
-//        let view = UIView()
-//
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//
-//        return view
-//    }()
-//
-//    private lazy var spendingGoalsUIView: UIView = {
-//        let view = UIView()
-//
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//
-//        return view
-//    }()
     
     private lazy var pinnedGoalsUIView: PinnedGoalsUIView = {
         let view = PinnedGoalsUIView()
@@ -83,14 +67,28 @@ class GoalsViewController: UIViewController {
             goalsUIView.topAnchor.constraint(equalTo: pinnedGoalsUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 32)),
             goalsUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             goalsUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            goalsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 399)),
-            
-            
+            goalsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 399))
         ])
     }
 
     @objc private func segmentedControlTapped(sender: UISegmentedControl) {
-        let _ = sender.selectedSegmentIndex
+        switch sender.selectedSegmentIndex {
+        case 0:
+            showFirstScreen()
+        case 1:
+            showSecondScreen()
+        default:
+            break
+        }
+    }
+    
+    private func showFirstScreen() {
+        pinnedGoalsUIView.isHidden = false
+        goalsUIView.isHidden = pinnedGoalsUIView.isHidden
+    }
 
+    private func showSecondScreen() {
+        pinnedGoalsUIView.isHidden = true
+        goalsUIView.isHidden = pinnedGoalsUIView.isHidden
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4C4D902A4F094E00D06B56 /* ChartsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4D8F2A4F094E00D06B56 /* ChartsManager.swift */; };
+		EF4C4D942A4F09FE00D06B56 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = EF4C4D932A4F09FE00D06B56 /* DGCharts */; };
 		EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684282A4DB52B0020D86C /* AppDelegate.swift */; };
 		EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */; };
 		EF9684322A4DB52C0020D86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9684312A4DB52C0020D86C /* Assets.xcassets */; };
@@ -42,7 +44,21 @@
 		EF96848D2A4DB8870020D86C /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96848C2A4DB8870020D86C /* Extension+ViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EF4C4D9A2A4F0B5800D06B56 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EF4C4D8F2A4F094E00D06B56 /* ChartsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsManager.swift; sourceTree = "<group>"; };
 		EF9684252A4DB52B0020D86C /* SpenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9684282A4DB52B0020D86C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,12 +101,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF4C4D942A4F09FE00D06B56 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF4C4D9B2A4F18A900D06B56 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EF4C4D8F2A4F094E00D06B56 /* ChartsManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		EF96841C2A4DB52B0020D86C = {
 			isa = PBXGroup;
 			children = (
@@ -111,8 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				EF96843D2A4DB5C70020D86C /* Controllers */,
-				EF96843F2A4DB5D40020D86C /* Companents */,
 				EF96843E2A4DB5CF0020D86C /* Cell */,
+				EF96843F2A4DB5D40020D86C /* Companents */,
+				EF4C4D9B2A4F18A900D06B56 /* Manager */,
 				EF9684402A4DB5DD0020D86C /* Helpers */,
 				EF96843C2A4DB5400020D86C /* Resources */,
 				EF9684362A4DB52C0020D86C /* Info.plist */,
@@ -350,12 +376,16 @@
 				EF9684212A4DB52B0020D86C /* Sources */,
 				EF9684222A4DB52B0020D86C /* Frameworks */,
 				EF9684232A4DB52B0020D86C /* Resources */,
+				EF4C4D9A2A4F0B5800D06B56 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SpenderApp;
+			packageProductDependencies = (
+				EF4C4D932A4F09FE00D06B56 /* DGCharts */,
+			);
 			productName = SpenderApp;
 			productReference = EF9684252A4DB52B0020D86C /* SpenderApp.app */;
 			productType = "com.apple.product-type.application";
@@ -384,6 +414,9 @@
 				Base,
 			);
 			mainGroup = EF96841C2A4DB52B0020D86C;
+			packageReferences = (
+				EF4C4D922A4F09FE00D06B56 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = EF9684262A4DB52B0020D86C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -416,6 +449,7 @@
 				EF9684572A4DB6C70020D86C /* SpendAnalysisViewController.swift in Sources */,
 				EF96846A2A4DB7580020D86C /* SideBarTableViewCell.swift in Sources */,
 				EF9684632A4DB70D0020D86C /* SupportViewController.swift in Sources */,
+				EF4C4D902A4F094E00D06B56 /* ChartsManager.swift in Sources */,
 				EF9684672A4DB71F0020D86C /* LoginViewController.swift in Sources */,
 				EF9684872A4DB86A0020D86C /* Extension+CGFloat.swift in Sources */,
 				EF96847B2A4DB8050020D86C /* BankingUIView.swift in Sources */,
@@ -586,6 +620,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,6 +648,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -648,6 +684,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF4C4D922A4F09FE00D06B56 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF4C4D932A4F09FE00D06B56 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF4C4D922A4F09FE00D06B56 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF96841D2A4DB52B0020D86C /* Project object */;
 }
