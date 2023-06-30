@@ -79,8 +79,6 @@ class SavingsGoalsCollectionViewCell: UICollectionViewCell {
     private lazy var chartsView: PieChartView = {
         let charts = PieChartView()
         
-        
-        
         charts.translatesAutoresizingMaskIntoConstraints = false
         
         return charts
@@ -100,7 +98,7 @@ class SavingsGoalsCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(leftLabel)
         contentView.addSubview(chartsView)
         
-        ChartsManager.shared.configurePieChart(chartsView, lineWidth: 2)
+        ChartsManager.shared.configurePieChart(chartsView, text: "")
         let data = ChartsManager.shared.createPieChartData(value: 20, emptyValue: 80)
         chartsView.data = data
     }

@@ -39,6 +39,24 @@ class GoalsViewController: UIViewController {
         
         return view
     }()
+    
+    private lazy var activeGoalsUIView: ActiveGoalsUIView = {
+        let view = ActiveGoalsUIView()
+        
+        view.isHidden = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
+    private lazy var totalSpendUIView: TotalSpendUIView = {
+        let view = TotalSpendUIView()
+        
+        view.isHidden = true
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +66,8 @@ class GoalsViewController: UIViewController {
         view.addSubview(segmentedControl)
         view.addSubview(pinnedGoalsUIView)
         view.addSubview(goalsUIView)
+        view.addSubview(totalSpendUIView)
+        view.addSubview(activeGoalsUIView)
     }
     
     override func viewWillLayoutSubviews() {
@@ -67,7 +87,17 @@ class GoalsViewController: UIViewController {
             goalsUIView.topAnchor.constraint(equalTo: pinnedGoalsUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 32)),
             goalsUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             goalsUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            goalsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 399))
+            goalsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 399)),
+            
+            totalSpendUIView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: CGFloat.dHeight(padding: 24)),
+            totalSpendUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            totalSpendUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            totalSpendUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 183)),
+            
+            activeGoalsUIView.topAnchor.constraint(equalTo: totalSpendUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 24)),
+            activeGoalsUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            activeGoalsUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            activeGoalsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 384))
         ])
     }
 
@@ -85,10 +115,16 @@ class GoalsViewController: UIViewController {
     private func showFirstScreen() {
         pinnedGoalsUIView.isHidden = false
         goalsUIView.isHidden = pinnedGoalsUIView.isHidden
+        
+        totalSpendUIView.isHidden = true
+        activeGoalsUIView.isHidden = totalSpendUIView.isHidden
     }
 
     private func showSecondScreen() {
         pinnedGoalsUIView.isHidden = true
         goalsUIView.isHidden = pinnedGoalsUIView.isHidden
+        
+        totalSpendUIView.isHidden = false
+        activeGoalsUIView.isHidden = totalSpendUIView.isHidden
     }
 }

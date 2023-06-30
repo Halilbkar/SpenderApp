@@ -8,22 +8,58 @@
 import UIKit
 
 class PayBillsViewController: UIViewController {
+    
+    private lazy var segmentedControl: UISegmentedControl = {
+        let segmentedControl = UISegmentedControl(items: ["Pay", "Activity"])
+        
+        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.selectedSegmentTintColor = .black
+        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .normal)
+        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
+
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        
+        segmentedControl.addTarget(self, action: #selector(segmentedControlTapped(sender:)), for: .valueChanged)
+        
+        return segmentedControl
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor(named: "grey100")
+        
+        view.addSubview(segmentedControl)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        NSLayoutConstraint.activate([
+            
+            segmentedControl.topAnchor.constraint(equalTo: view.topAnchor, constant: CGFloat.dHeight(padding: 24)),
+            segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
+            segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
+        ])
     }
-    */
+    
+    @objc private func segmentedControlTapped(sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            showFirstScreen()
+        case 1:
+            showSecondScreen()
+        default:
+            break
+        }
+    }
+    
+    private func showFirstScreen() {
+        
+    }
+
+    private func showSecondScreen() {
+        
+    }
 
 }

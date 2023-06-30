@@ -41,6 +41,8 @@ class PinnedGoalsUIView: UIView {
     override init(frame: CGRect) {
         super .init(frame: frame)
         
+        backgroundColor = .clear
+        
         addSubview(pinnedGoalsLabel)
         addSubview(pinnedGoalsCollectionView)
     }

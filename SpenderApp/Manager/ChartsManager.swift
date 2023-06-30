@@ -25,19 +25,19 @@ class ChartsManager {
     //        pieChartView.entryLabelFont = UIFont.systemFont(ofSize: 12.0)
     //    }
     
-    func configurePieChart(_ pieChartView: PieChartView, lineWidth: CGFloat) {
+    func configurePieChart(_ pieChartView: PieChartView, text: String) {
         pieChartView.usePercentValuesEnabled = true
         pieChartView.drawSlicesUnderHoleEnabled = false
         pieChartView.holeRadiusPercent = 0.5
         pieChartView.transparentCircleRadiusPercent = 0.6
         pieChartView.legend.enabled = false
         pieChartView.entryLabelColor = UIColor.black
-        pieChartView.entryLabelFont = UIFont.systemFont(ofSize: 12.0)
+        pieChartView.entryLabelFont = UIFont.systemFont(ofSize: 32)
         
         // Çizgi kalınlığını ayarla
-//        pieChartView.drawEntryLabelsEnabled = false
-//        pieChartView.drawCenterTextEnabled = true
-//        pieChartView.centerText = "Center Text"
+        pieChartView.drawEntryLabelsEnabled = false
+        pieChartView.drawCenterTextEnabled = true
+        pieChartView.centerText = text
         pieChartView.drawHoleEnabled = true
         pieChartView.holeColor = UIColor.clear
         pieChartView.holeRadiusPercent = 0.7
