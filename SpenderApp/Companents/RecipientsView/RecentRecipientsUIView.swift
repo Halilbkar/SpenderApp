@@ -1,14 +1,14 @@
 //
-//  RecentReicipientsUIView.swift
+//  RecentRecipientsUIView.swift
 //  SpenderApp
 //
-//  Created by Halil Bakar on 30.06.2023.
+//  Created by Halil Bakar on 1.07.2023.
 //
 
 import UIKit
 
-class RecentReicipientsUIView: UIView {
-    
+class RecentRecipientsUIView: UIView {
+
     private lazy var recentLabel: UILabel = {
         let label = UILabel()
         
@@ -79,9 +79,11 @@ class RecentReicipientsUIView: UIView {
     required init(coder: NSCoder) {
         fatalError()
     }
+
 }
 
-extension RecentReicipientsUIView: UICollectionViewDelegate, UICollectionViewDataSource {
+extension RecentRecipientsUIView: UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }

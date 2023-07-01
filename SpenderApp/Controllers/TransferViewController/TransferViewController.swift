@@ -25,8 +25,8 @@ class TransferViewController: UIViewController {
         return view
     }()
     
-    private lazy var recentReicipientsUIView: RecentReicipientsUIView = {
-        let view = RecentReicipientsUIView()
+    private lazy var recentReicipientsTransferUIView: RecentReicipientsTransferUIView = {
+        let view = RecentReicipientsTransferUIView()
         
         view.translatesAutoresizingMaskIntoConstraints = false
 
@@ -40,7 +40,7 @@ class TransferViewController: UIViewController {
         
         view.addSubview(verticalTransfersUIView)
         view.addSubview(horizontalTransfersUIView)
-        view.addSubview(recentReicipientsUIView)
+        view.addSubview(recentReicipientsTransferUIView)
     }
     
     override func viewWillLayoutSubviews() {
@@ -58,10 +58,10 @@ class TransferViewController: UIViewController {
             horizontalTransfersUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             horizontalTransfersUIView.heightAnchor.constraint(equalToConstant: 85),
             
-            recentReicipientsUIView.topAnchor.constraint(equalTo: horizontalTransfersUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 48)),
-            recentReicipientsUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            recentReicipientsUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            recentReicipientsUIView.heightAnchor.constraint(equalToConstant: 102)
+            recentReicipientsTransferUIView.topAnchor.constraint(equalTo: horizontalTransfersUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 48)),
+            recentReicipientsTransferUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            recentReicipientsTransferUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            recentReicipientsTransferUIView.heightAnchor.constraint(equalToConstant: 102)
         ])
     }
 

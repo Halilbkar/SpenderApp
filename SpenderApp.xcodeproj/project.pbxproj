@@ -18,11 +18,16 @@
 		EF4C4DAA2A4F4F0F00D06B56 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DA92A4F4F0E00D06B56 /* CategoryCollectionViewCell.swift */; };
 		EF4C4DAD2A4F59BA00D06B56 /* VerticalAccountTransfersUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DAC2A4F59BA00D06B56 /* VerticalAccountTransfersUIView.swift */; };
 		EF4C4DAF2A4F59FC00D06B56 /* HorizontalAccountTransfersUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DAE2A4F59FC00D06B56 /* HorizontalAccountTransfersUIView.swift */; };
-		EF4C4DB12A4F5A0B00D06B56 /* RecentReicipientsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DB02A4F5A0B00D06B56 /* RecentReicipientsUIView.swift */; };
+		EF4C4DB12A4F5A0B00D06B56 /* RecentReicipientsTransferUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DB02A4F5A0B00D06B56 /* RecentReicipientsTransferUIView.swift */; };
 		EF4C4DB32A4F630400D06B56 /* TransferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DB22A4F630400D06B56 /* TransferCollectionViewCell.swift */; };
 		EF4C4DB62A4F66AB00D06B56 /* PayUView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DB52A4F66AB00D06B56 /* PayUView.swift */; };
 		EF4C4DB82A4F66B500D06B56 /* ActivityUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DB72A4F66B500D06B56 /* ActivityUIView.swift */; };
 		EF4C4DBA2A4F677000D06B56 /* PayeesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DB92A4F677000D06B56 /* PayeesCollectionViewCell.swift */; };
+		EF4C4DBD2A504D6100D06B56 /* PinnedReicipientsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DBC2A504D6100D06B56 /* PinnedReicipientsUIView.swift */; };
+		EF4C4DBF2A504ED100D06B56 /* RecentRecipientsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DBE2A504ED100D06B56 /* RecentRecipientsUIView.swift */; };
+		EF4C4DC12A50502000D06B56 /* PinnedRecipientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC02A50502000D06B56 /* PinnedRecipientsCollectionViewCell.swift */; };
+		EF4C4DC32A5050A500D06B56 /* TransActionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC22A5050A500D06B56 /* TransActionsCollectionViewCell.swift */; };
+		EF4C4DC52A5050DD00D06B56 /* TransActionsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC42A5050DD00D06B56 /* TransActionsUIView.swift */; };
 		EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684282A4DB52B0020D86C /* AppDelegate.swift */; };
 		EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */; };
 		EF9684322A4DB52C0020D86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9684312A4DB52C0020D86C /* Assets.xcassets */; };
@@ -82,11 +87,16 @@
 		EF4C4DA92A4F4F0E00D06B56 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF4C4DAC2A4F59BA00D06B56 /* VerticalAccountTransfersUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAccountTransfersUIView.swift; sourceTree = "<group>"; };
 		EF4C4DAE2A4F59FC00D06B56 /* HorizontalAccountTransfersUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAccountTransfersUIView.swift; sourceTree = "<group>"; };
-		EF4C4DB02A4F5A0B00D06B56 /* RecentReicipientsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentReicipientsUIView.swift; sourceTree = "<group>"; };
+		EF4C4DB02A4F5A0B00D06B56 /* RecentReicipientsTransferUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentReicipientsTransferUIView.swift; sourceTree = "<group>"; };
 		EF4C4DB22A4F630400D06B56 /* TransferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF4C4DB52A4F66AB00D06B56 /* PayUView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayUView.swift; sourceTree = "<group>"; };
 		EF4C4DB72A4F66B500D06B56 /* ActivityUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityUIView.swift; sourceTree = "<group>"; };
 		EF4C4DB92A4F677000D06B56 /* PayeesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayeesCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF4C4DBC2A504D6100D06B56 /* PinnedReicipientsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedReicipientsUIView.swift; sourceTree = "<group>"; };
+		EF4C4DBE2A504ED100D06B56 /* RecentRecipientsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRecipientsUIView.swift; sourceTree = "<group>"; };
+		EF4C4DC02A50502000D06B56 /* PinnedRecipientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedRecipientsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF4C4DC22A5050A500D06B56 /* TransActionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransActionsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF4C4DC42A5050DD00D06B56 /* TransActionsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransActionsUIView.swift; sourceTree = "<group>"; };
 		EF9684252A4DB52B0020D86C /* SpenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9684282A4DB52B0020D86C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +169,7 @@
 			children = (
 				EF4C4DAC2A4F59BA00D06B56 /* VerticalAccountTransfersUIView.swift */,
 				EF4C4DAE2A4F59FC00D06B56 /* HorizontalAccountTransfersUIView.swift */,
-				EF4C4DB02A4F5A0B00D06B56 /* RecentReicipientsUIView.swift */,
+				EF4C4DB02A4F5A0B00D06B56 /* RecentReicipientsTransferUIView.swift */,
 			);
 			path = TransferView;
 			sourceTree = "<group>";
@@ -171,6 +181,16 @@
 				EF4C4DB72A4F66B500D06B56 /* ActivityUIView.swift */,
 			);
 			path = PayBillsView;
+			sourceTree = "<group>";
+		};
+		EF4C4DBB2A504C7200D06B56 /* RecipientsView */ = {
+			isa = PBXGroup;
+			children = (
+				EF4C4DBC2A504D6100D06B56 /* PinnedReicipientsUIView.swift */,
+				EF4C4DBE2A504ED100D06B56 /* RecentRecipientsUIView.swift */,
+				EF4C4DC42A5050DD00D06B56 /* TransActionsUIView.swift */,
+			);
+			path = RecipientsView;
 			sourceTree = "<group>";
 		};
 		EF96841C2A4DB52B0020D86C = {
@@ -245,6 +265,7 @@
 		EF96843F2A4DB5D40020D86C /* Companents */ = {
 			isa = PBXGroup;
 			children = (
+				EF4C4DBB2A504C7200D06B56 /* RecipientsView */,
 				EF4C4DB42A4F65B300D06B56 /* PayBillsView */,
 				EF4C4DAB2A4F598400D06B56 /* TransferView */,
 				EF9684742A4DB7C20020D86C /* DashboardView */,
@@ -398,6 +419,8 @@
 				EF4C4DA92A4F4F0E00D06B56 /* CategoryCollectionViewCell.swift */,
 				EF4C4DB22A4F630400D06B56 /* TransferCollectionViewCell.swift */,
 				EF4C4DB92A4F677000D06B56 /* PayeesCollectionViewCell.swift */,
+				EF4C4DC02A50502000D06B56 /* PinnedRecipientsCollectionViewCell.swift */,
+				EF4C4DC22A5050A500D06B56 /* TransActionsCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -520,17 +543,21 @@
 				EF4C4D902A4F094E00D06B56 /* ChartsManager.swift in Sources */,
 				EF9684672A4DB71F0020D86C /* LoginViewController.swift in Sources */,
 				EF9684872A4DB86A0020D86C /* Extension+CGFloat.swift in Sources */,
+				EF4C4DC32A5050A500D06B56 /* TransActionsCollectionViewCell.swift in Sources */,
 				EF96847B2A4DB8050020D86C /* BankingUIView.swift in Sources */,
 				EF9684852A4DB8570020D86C /* SideBarSection.swift in Sources */,
 				EF4C4D9D2A4F19B700D06B56 /* ActiveGoalsUIView.swift in Sources */,
 				EF4C4DAD2A4F59BA00D06B56 /* VerticalAccountTransfersUIView.swift in Sources */,
+				EF4C4DC12A50502000D06B56 /* PinnedRecipientsCollectionViewCell.swift in Sources */,
 				EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */,
 				EF96845F2A4DB6F70020D86C /* RecipientsViewController.swift in Sources */,
+				EF4C4DBD2A504D6100D06B56 /* PinnedReicipientsUIView.swift in Sources */,
 				EF9684792A4DB7FA0020D86C /* QuickActionsUIView.swift in Sources */,
 				EF4C4DA12A4F1F7F00D06B56 /* TotalSpendUIView.swift in Sources */,
 				EF9684592A4DB6D40020D86C /* TransferViewController.swift in Sources */,
 				EF96845D2A4DB6ED0020D86C /* DepositCheckViewController.swift in Sources */,
 				EF4C4DAA2A4F4F0F00D06B56 /* CategoryCollectionViewCell.swift in Sources */,
+				EF4C4DBF2A504ED100D06B56 /* RecentRecipientsUIView.swift in Sources */,
 				EF9684612A4DB7040020D86C /* ProfileViewController.swift in Sources */,
 				EF96848D2A4DB8870020D86C /* Extension+ViewController.swift in Sources */,
 				EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */,
@@ -553,7 +580,8 @@
 				EF96848B2A4DB87B0020D86C /* Extension+Cells.swift in Sources */,
 				EF4C4D9F2A4F1A7A00D06B56 /* SpendingGoalsCollectionViewCell.swift in Sources */,
 				EF4C4DB32A4F630400D06B56 /* TransferCollectionViewCell.swift in Sources */,
-				EF4C4DB12A4F5A0B00D06B56 /* RecentReicipientsUIView.swift in Sources */,
+				EF4C4DC52A5050DD00D06B56 /* TransActionsUIView.swift in Sources */,
+				EF4C4DB12A4F5A0B00D06B56 /* RecentReicipientsTransferUIView.swift in Sources */,
 				EF4C4DB62A4F66AB00D06B56 /* PayUView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

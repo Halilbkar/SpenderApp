@@ -31,9 +31,6 @@ class DateUIView: UIView {
         button.configuration = .filled()
         button.configuration?.image = UIImage(systemName: "calendar")
         button.configuration?.baseForegroundColor = .black
-        
-//        button.setImage(UIImage(systemName: "calendar"), for: .normal)
-//
         button.translatesAutoresizingMaskIntoConstraints = false
         
         return button
@@ -45,8 +42,7 @@ class DateUIView: UIView {
         button.configuration = .filled()
         button.configuration?.image = UIImage(systemName: "cursorarrow.motionlines")
         button.configuration?.baseForegroundColor = .black
-        
-//        button.setImage(UIImage(systemName: "cursorarrow.motionlines"), for: .normal)
+        button.configuration?.buttonSize = .large
 
         button.translatesAutoresizingMaskIntoConstraints = false
         

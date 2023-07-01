@@ -23,7 +23,7 @@ class PayUView: UIView {
     private lazy var payButtonLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "+ ADD GOAL"
+        label.text = "+ ADD PAYEE"
         label.font = .boldSystemFont(ofSize: 10)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -68,7 +68,7 @@ class PayUView: UIView {
             payLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
             payLabel.trailingAnchor.constraint(equalTo: payButtonLabel.leadingAnchor),
             
-            payButtonLabel.topAnchor.constraint(equalTo: topAnchor),
+            payButtonLabel.topAnchor.constraint(equalTo: topAnchor, constant: CGFloat.dHeight(padding: 4)),
             payButtonLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
 
             payCollectionView.topAnchor.constraint(equalTo: payLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 16)),

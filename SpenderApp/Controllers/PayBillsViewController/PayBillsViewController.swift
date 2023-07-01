@@ -23,6 +23,14 @@ class PayBillsViewController: UIViewController {
         
         return segmentedControl
     }()
+    
+    private lazy var payUIView: PayUView = {
+        let view = PayUView()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +38,7 @@ class PayBillsViewController: UIViewController {
         view.backgroundColor = UIColor(named: "grey100")
         
         view.addSubview(segmentedControl)
+        view.addSubview(payUIView)
     }
     
     override func viewWillLayoutSubviews() {
@@ -40,6 +49,11 @@ class PayBillsViewController: UIViewController {
             segmentedControl.topAnchor.constraint(equalTo: view.topAnchor, constant: CGFloat.dHeight(padding: 24)),
             segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
             segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
+            
+            payUIView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: CGFloat.dHeight(padding: 30)),
+            payUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            payUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            payUIView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
     

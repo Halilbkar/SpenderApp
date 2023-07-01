@@ -1,13 +1,13 @@
 //
-//  TransferCollectionViewCell.swift
+//  PinnedRecipientsCollectionViewCell.swift
 //  SpenderApp
 //
-//  Created by Halil Bakar on 30.06.2023.
+//  Created by Halil Bakar on 1.07.2023.
 //
 
 import UIKit
 
-class TransferCollectionViewCell: UICollectionViewCell {
+class PinnedRecipientsCollectionViewCell: UICollectionViewCell {
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
