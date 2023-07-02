@@ -12,10 +12,9 @@ class TransActionsCollectionViewCell: UICollectionViewCell {
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         
-        imageView.layer.cornerRadius = imageView.frame.size.width / 2
         imageView.backgroundColor = .red
-        imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
+        imageView.contentMode = .scaleAspectFit
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -102,6 +101,8 @@ class TransActionsCollectionViewCell: UICollectionViewCell {
             paymentLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 4)),
             paymentLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
         ])
+        
+        imageView.layer.cornerRadius = imageView.frame.size.width / 2
     }
     
     required init(coder: NSCoder) {

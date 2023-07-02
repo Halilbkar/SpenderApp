@@ -34,6 +34,7 @@ class RecentReicipientsTransferUIView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 58, height: 58)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         layout.minimumInteritemSpacing = 8
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -70,8 +71,8 @@ class RecentReicipientsTransferUIView: UIView {
             viewallLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
             
             transferCollectionView.topAnchor.constraint(equalTo: viewallLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 8)),
-            transferCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
-            transferCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
+            transferCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            transferCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             transferCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }

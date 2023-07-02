@@ -12,7 +12,7 @@ class TransActionsUIView: UIView {
     private lazy var transActionsLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "Recent Recipients"
+        label.text = "Trans Actions"
         label.font = .boldSystemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         

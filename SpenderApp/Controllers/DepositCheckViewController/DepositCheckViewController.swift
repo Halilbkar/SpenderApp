@@ -24,7 +24,7 @@ class DepositCheckViewController: UIViewController {
         let label = UILabel()
         
         label.text = "$12.900"
-        label.font = .boldSystemFont(ofSize: CGFloat.dWidth(padding: 48))
+        label.font = .boldSystemFont(ofSize: CGFloat.dWidth(padding: 36))
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -34,8 +34,8 @@ class DepositCheckViewController: UIViewController {
     private lazy var descLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "CURRENT Deposit Limit"
-        label.font = .boldSystemFont(ofSize: CGFloat.dWidth(padding: 48))
+        label.text = "CURRENT DEPOSIT LIMIT"
+        label.font = .systemFont(ofSize: CGFloat.dWidth(padding: 8))
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -55,7 +55,6 @@ class DepositCheckViewController: UIViewController {
         
         return button
     }()
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,7 +86,8 @@ class DepositCheckViewController: UIViewController {
             
             depositButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: CGFloat.dHeight(padding: 24)),
             depositButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: CGFloat.dWidth(padding: 81.5)),
-            depositButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat.dWidth(padding: -81.5))
+            depositButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat.dWidth(padding: -81.5)),
+            depositButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: CGFloat.dHeight(padding: -24))
         ])
     }
 }

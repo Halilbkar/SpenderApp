@@ -36,6 +36,7 @@ class SavingsGoalsUIView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 267, height: 156)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         layout.minimumInteritemSpacing = 16
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -72,8 +73,8 @@ class SavingsGoalsUIView: UIView {
             savingsbuttonLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
 
             savingsCollectionView.topAnchor.constraint(equalTo: savingsLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 8)),
-            savingsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
-            savingsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
+            savingsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            savingsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             savingsCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }

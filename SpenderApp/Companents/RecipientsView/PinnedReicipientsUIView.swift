@@ -24,6 +24,7 @@ class PinnedReicipientsUIView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 104, height: 104)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         layout.minimumInteritemSpacing = 16
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -58,8 +59,8 @@ class PinnedReicipientsUIView: UIView {
             recipientsPinnedLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
             
             recipientsCollectionView.topAnchor.constraint(equalTo: recipientsPinnedLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 8)),
-            recipientsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
-            recipientsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
+            recipientsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            recipientsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             recipientsCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }

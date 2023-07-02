@@ -74,7 +74,6 @@ class BankingUIView: UIView {
             bankingCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
             bankingCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
             bankingCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            
         ])
     }
     

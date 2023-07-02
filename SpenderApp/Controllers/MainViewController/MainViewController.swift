@@ -71,15 +71,15 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(named: "grey100")
-
-        view.addSubview(containerView)
+        
         view.addSubview(headerView)
+        view.addSubview(containerView)
         view.addSubview(sideBarUIView)
         
         headerView.addSubview(headerLabel)
         headerView.addSubview(headerButton)
         
-        self.displayViewController(DashboradViewController(), containerView: containerView)
+        self.displayViewController(SideBarSection.dashboard.view, containerView: containerView)
     }
     
     override func viewWillLayoutSubviews() {

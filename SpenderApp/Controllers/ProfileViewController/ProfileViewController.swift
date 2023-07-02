@@ -8,22 +8,84 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    private lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.backgroundColor = .clear
+        scrollView.isScrollEnabled = true
+        
+        return scrollView
+    }()
+    
+    private lazy var profileEditUIView: ProfileEditUIView = {
+        let view = ProfileEditUIView()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
+    private lazy var myInformationUIView: MyInformationUIView = {
+        let view = MyInformationUIView()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
+    private lazy var myAccountsUIView: MyAccountsUIView = {
+        let view = MyAccountsUIView()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor(named: "grey100")
+        
+        view.addSubview(scrollView)
+        
+        scrollView.addSubview(profileEditUIView)
+        scrollView.addSubview(myInformationUIView)
+        scrollView.addSubview(myAccountsUIView)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        scrollView.contentSize = CGSize(width: view.frame.size.width, height: 1000)
     }
-    */
-
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+                        
+        NSLayoutConstraint.activate([
+            
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        
+            profileEditUIView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: CGFloat.dHeight(padding: 24)),
+            profileEditUIView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            profileEditUIView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            profileEditUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 168)),
+            
+            myInformationUIView.topAnchor.constraint(equalTo: profileEditUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 24)),
+            myInformationUIView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            myInformationUIView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            myInformationUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 480)),
+            
+            myAccountsUIView.topAnchor.constraint(equalTo: myInformationUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 24)),
+            myAccountsUIView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            myAccountsUIView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            myAccountsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 180))
+        ])
+    }
 }

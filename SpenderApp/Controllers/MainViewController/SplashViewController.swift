@@ -61,7 +61,7 @@ class SplashViewController: UIViewController {
         }
         
         splahImageView.animationImages = logoImages
-        splahImageView.animationDuration = 2 // Animasyon süresini ayarlayın
+        splahImageView.animationDuration = 2
         splahImageView.animationRepeatCount = 1
     }
     

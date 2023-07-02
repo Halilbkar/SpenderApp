@@ -28,6 +28,9 @@
 		EF4C4DC12A50502000D06B56 /* PinnedRecipientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC02A50502000D06B56 /* PinnedRecipientsCollectionViewCell.swift */; };
 		EF4C4DC32A5050A500D06B56 /* TransActionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC22A5050A500D06B56 /* TransActionsCollectionViewCell.swift */; };
 		EF4C4DC52A5050DD00D06B56 /* TransActionsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC42A5050DD00D06B56 /* TransActionsUIView.swift */; };
+		EF4C4DC82A519FDC00D06B56 /* ProfileEditUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC72A519FDC00D06B56 /* ProfileEditUIView.swift */; };
+		EF4C4DCA2A51A60B00D06B56 /* MyInformationUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC92A51A60B00D06B56 /* MyInformationUIView.swift */; };
+		EF4C4DCC2A51A61900D06B56 /* MyAccountsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DCB2A51A61900D06B56 /* MyAccountsUIView.swift */; };
 		EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684282A4DB52B0020D86C /* AppDelegate.swift */; };
 		EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */; };
 		EF9684322A4DB52C0020D86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9684312A4DB52C0020D86C /* Assets.xcassets */; };
@@ -97,6 +100,9 @@
 		EF4C4DC02A50502000D06B56 /* PinnedRecipientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedRecipientsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF4C4DC22A5050A500D06B56 /* TransActionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransActionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF4C4DC42A5050DD00D06B56 /* TransActionsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransActionsUIView.swift; sourceTree = "<group>"; };
+		EF4C4DC72A519FDC00D06B56 /* ProfileEditUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditUIView.swift; sourceTree = "<group>"; };
+		EF4C4DC92A51A60B00D06B56 /* MyInformationUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationUIView.swift; sourceTree = "<group>"; };
+		EF4C4DCB2A51A61900D06B56 /* MyAccountsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountsUIView.swift; sourceTree = "<group>"; };
 		EF9684252A4DB52B0020D86C /* SpenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9684282A4DB52B0020D86C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +199,16 @@
 			path = RecipientsView;
 			sourceTree = "<group>";
 		};
+		EF4C4DC62A519FC700D06B56 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				EF4C4DC72A519FDC00D06B56 /* ProfileEditUIView.swift */,
+				EF4C4DC92A51A60B00D06B56 /* MyInformationUIView.swift */,
+				EF4C4DCB2A51A61900D06B56 /* MyAccountsUIView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
 		EF96841C2A4DB52B0020D86C = {
 			isa = PBXGroup;
 			children = (
@@ -265,13 +281,14 @@
 		EF96843F2A4DB5D40020D86C /* Companents */ = {
 			isa = PBXGroup;
 			children = (
+				EF9684732A4DB7BD0020D86C /* SideBar */,
+				EF9684752A4DB7C50020D86C /* GoalsView */,
+				EF9684742A4DB7C20020D86C /* DashboardView */,
+				EF4C4DC62A519FC700D06B56 /* ProfileView */,
 				EF4C4DBB2A504C7200D06B56 /* RecipientsView */,
 				EF4C4DB42A4F65B300D06B56 /* PayBillsView */,
 				EF4C4DAB2A4F598400D06B56 /* TransferView */,
-				EF9684742A4DB7C20020D86C /* DashboardView */,
-				EF9684752A4DB7C50020D86C /* GoalsView */,
 				EF4C4DA22A4F49E800D06B56 /* SpendAnalysisView */,
-				EF9684732A4DB7BD0020D86C /* SideBar */,
 			);
 			path = Companents;
 			sourceTree = "<group>";
@@ -538,11 +555,13 @@
 				EF9684572A4DB6C70020D86C /* SpendAnalysisViewController.swift in Sources */,
 				EF4C4DA62A4F4A9700D06B56 /* DonutChartsUIView.swift in Sources */,
 				EF96846A2A4DB7580020D86C /* SideBarTableViewCell.swift in Sources */,
+				EF4C4DCA2A51A60B00D06B56 /* MyInformationUIView.swift in Sources */,
 				EF4C4DAF2A4F59FC00D06B56 /* HorizontalAccountTransfersUIView.swift in Sources */,
 				EF9684632A4DB70D0020D86C /* SupportViewController.swift in Sources */,
 				EF4C4D902A4F094E00D06B56 /* ChartsManager.swift in Sources */,
 				EF9684672A4DB71F0020D86C /* LoginViewController.swift in Sources */,
 				EF9684872A4DB86A0020D86C /* Extension+CGFloat.swift in Sources */,
+				EF4C4DCC2A51A61900D06B56 /* MyAccountsUIView.swift in Sources */,
 				EF4C4DC32A5050A500D06B56 /* TransActionsCollectionViewCell.swift in Sources */,
 				EF96847B2A4DB8050020D86C /* BankingUIView.swift in Sources */,
 				EF9684852A4DB8570020D86C /* SideBarSection.swift in Sources */,
@@ -570,6 +589,7 @@
 				EF4C4DBA2A4F677000D06B56 /* PayeesCollectionViewCell.swift in Sources */,
 				EF4C4DB82A4F66B500D06B56 /* ActivityUIView.swift in Sources */,
 				EF9684702A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift in Sources */,
+				EF4C4DC82A519FDC00D06B56 /* ProfileEditUIView.swift in Sources */,
 				EF96845B2A4DB6E40020D86C /* PayBillsViewController.swift in Sources */,
 				EF9684772A4DB7EC0020D86C /* SideBarUIView.swift in Sources */,
 				EF4C4DA42A4F4A8D00D06B56 /* DateUIView.swift in Sources */,

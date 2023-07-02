@@ -25,6 +25,7 @@ class PinnedGoalsUIView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 250, height: 163)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         layout.minimumInteritemSpacing = 16
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -57,8 +58,8 @@ class PinnedGoalsUIView: UIView {
             pinnedGoalsLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
 
             pinnedGoalsCollectionView.topAnchor.constraint(equalTo: pinnedGoalsLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 8)),
-            pinnedGoalsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
-            pinnedGoalsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
+            pinnedGoalsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            pinnedGoalsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             pinnedGoalsCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }

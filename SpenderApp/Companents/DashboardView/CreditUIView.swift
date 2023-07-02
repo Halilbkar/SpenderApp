@@ -36,7 +36,7 @@ class CreditUIView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 150, height: 159)
-//        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         layout.minimumInteritemSpacing = 16
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -58,7 +58,6 @@ class CreditUIView: UIView {
         addSubview(creditLabel)
         addSubview(creditbuttonLabel)
         addSubview(creditCollectionView)
-        
     }
     
     override func layoutSubviews() {
@@ -74,8 +73,8 @@ class CreditUIView: UIView {
             creditbuttonLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
 
             creditCollectionView.topAnchor.constraint(equalTo: creditLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 8)),
-            creditCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
-            creditCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
+            creditCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            creditCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
             creditCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }

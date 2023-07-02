@@ -9,6 +9,17 @@ import UIKit
 
 class DashboradViewController: UIViewController {
     
+    private lazy var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.backgroundColor = .clear
+        scrollView.isScrollEnabled = true
+        
+        return scrollView
+    }()
+    
     private lazy var quickActionsUIView: QuickActionsUIView = {
         let view = QuickActionsUIView()
         
@@ -46,18 +57,31 @@ class DashboradViewController: UIViewController {
 
         view.backgroundColor = UIColor(named: "grey100")
         
-        view.addSubview(quickActionsUIView)
-        view.addSubview(bankingUIView)
-        view.addSubview(creditUIView)
-        view.addSubview(savingsGoalsUIView)
+        view.addSubview(scrollView)
+        
+        scrollView.addSubview(quickActionsUIView)
+        scrollView.addSubview(bankingUIView)
+        scrollView.addSubview(creditUIView)
+        scrollView.addSubview(savingsGoalsUIView)
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        scrollView.contentSize = CGSize(width: view.frame.size.width, height: 750)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
         
         NSLayoutConstraint.activate([
             
-            quickActionsUIView.topAnchor.constraint(equalTo: view.topAnchor, constant: CGFloat.dHeight(padding: 24)),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            quickActionsUIView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: CGFloat.dHeight(padding: 24)),
             quickActionsUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             quickActionsUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             quickActionsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 58)),
