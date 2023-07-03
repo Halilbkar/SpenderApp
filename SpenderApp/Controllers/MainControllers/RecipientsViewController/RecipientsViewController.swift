@@ -66,7 +66,7 @@ class RecipientsViewController: UIViewController {
             pinnedReicipientsUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             pinnedReicipientsUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             pinnedReicipientsUIView.heightAnchor.constraint(equalToConstant: 137),
-            
+
             recentRecipientsUIView.topAnchor.constraint(equalTo: pinnedReicipientsUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 48)),
             recentRecipientsUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             recentRecipientsUIView.trailingAnchor.constraint(equalTo: view.trailingAnchor),

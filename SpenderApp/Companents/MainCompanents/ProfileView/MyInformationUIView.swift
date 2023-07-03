@@ -27,6 +27,8 @@ class MyInformationUIView: UIView {
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
         
+        textField.addLeftPadding(textField: textField)
+        
         return textField
     }()
     
@@ -37,6 +39,8 @@ class MyInformationUIView: UIView {
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
+        
+        textField.addLeftPadding(textField: textField)
         
         return textField
     }()
@@ -49,6 +53,8 @@ class MyInformationUIView: UIView {
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
         
+        textField.addLeftPadding(textField: textField)
+        
         return textField
     }()
     
@@ -59,6 +65,8 @@ class MyInformationUIView: UIView {
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
+        
+        textField.addLeftPadding(textField: textField)
         
         return textField
     }()
@@ -71,6 +79,8 @@ class MyInformationUIView: UIView {
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
         
+        textField.addLeftPadding(textField: textField)
+        
         return textField
     }()
     
@@ -81,6 +91,8 @@ class MyInformationUIView: UIView {
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
+        
+        textField.addLeftPadding(textField: textField)
         
         return textField
     }()
@@ -93,6 +105,8 @@ class MyInformationUIView: UIView {
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
         
+        textField.addLeftPadding(textField: textField)
+        
         return textField
     }()
     
@@ -103,6 +117,8 @@ class MyInformationUIView: UIView {
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
+        
+        textField.addLeftPadding(textField: textField)
         
         return textField
     }()
@@ -115,6 +131,8 @@ class MyInformationUIView: UIView {
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
         
+        textField.addLeftPadding(textField: textField)
+        
         return textField
     }()
     
@@ -125,6 +143,8 @@ class MyInformationUIView: UIView {
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
         textField.translatesAutoresizingMaskIntoConstraints = false
+        
+        textField.addLeftPadding(textField: textField)
         
         return textField
     }()

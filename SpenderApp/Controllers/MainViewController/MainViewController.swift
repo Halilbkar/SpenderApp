@@ -72,10 +72,12 @@ class MainViewController: UIViewController {
         
         view.backgroundColor = UIColor(named: "grey100")
         
+        navigationItem.hidesBackButton = true
+        
         view.addSubview(headerView)
         view.addSubview(containerView)
         view.addSubview(sideBarUIView)
-        
+
         headerView.addSubview(headerLabel)
         headerView.addSubview(headerButton)
         

@@ -24,6 +24,7 @@ class DashboradViewController: UIViewController {
         let view = QuickActionsUIView()
         
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.delegate = self
         
         return view
     }()
@@ -58,7 +59,7 @@ class DashboradViewController: UIViewController {
         view.backgroundColor = UIColor(named: "grey100")
         
         view.addSubview(scrollView)
-        
+
         scrollView.addSubview(quickActionsUIView)
         scrollView.addSubview(bankingUIView)
         scrollView.addSubview(creditUIView)
@@ -102,5 +103,10 @@ class DashboradViewController: UIViewController {
             savingsGoalsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 219))
         ])
     }
+}
 
+extension DashboradViewController: QuickActionsUIViewProtocol {
+    func tapped() {
+        navigationController?.pushViewController(PayBillsViewController(), animated: true)
+    }
 }

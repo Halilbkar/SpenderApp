@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF2D00B02A52F61A0077400F /* EditSavingsGoalsDetailsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D00AF2A52F61A0077400F /* EditSavingsGoalsDetailsUIView.swift */; };
+		EF2D00B22A52F6690077400F /* EditSavingsSelectAccountUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D00B12A52F6690077400F /* EditSavingsSelectAccountUIView.swift */; };
+		EF2D00B42A52F67B0077400F /* EditSavingMoneyBreakDownUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D00B32A52F67B0077400F /* EditSavingMoneyBreakDownUIView.swift */; };
+		EF2D00B62A52F6A40077400F /* EditChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D00B52A52F6A40077400F /* EditChartsUIView.swift */; };
+		EF2D00B82A52F6B40077400F /* EditTransferUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D00B72A52F6B40077400F /* EditTransferUIView.swift */; };
+		EF2D00BA2A52FA070077400F /* CreateGoalOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D00B92A52FA070077400F /* CreateGoalOne.swift */; };
+		EF2D00BC2A52FA110077400F /* CreateGoalTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D00BB2A52FA110077400F /* CreateGoalTwo.swift */; };
+		EF2D00BE2A52FA1A0077400F /* CreateGoalThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D00BD2A52FA1A0077400F /* CreateGoalThree.swift */; };
 		EF4C4D902A4F094E00D06B56 /* ChartsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4D8F2A4F094E00D06B56 /* ChartsManager.swift */; };
 		EF4C4D942A4F09FE00D06B56 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = EF4C4D932A4F09FE00D06B56 /* DGCharts */; };
 		EF4C4D9D2A4F19B700D06B56 /* ActiveGoalsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4D9C2A4F19B700D06B56 /* ActiveGoalsUIView.swift */; };
@@ -31,6 +39,11 @@
 		EF4C4DC82A519FDC00D06B56 /* ProfileEditUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC72A519FDC00D06B56 /* ProfileEditUIView.swift */; };
 		EF4C4DCA2A51A60B00D06B56 /* MyInformationUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DC92A51A60B00D06B56 /* MyInformationUIView.swift */; };
 		EF4C4DCC2A51A61900D06B56 /* MyAccountsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DCB2A51A61900D06B56 /* MyAccountsUIView.swift */; };
+		EF4C4DD02A51E4EB00D06B56 /* GoalsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DCF2A51E4EB00D06B56 /* GoalsDetailsViewController.swift */; };
+		EF4C4DD42A51E5B300D06B56 /* GoalsDetailChartsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DD32A51E5B300D06B56 /* GoalsDetailChartsUIView.swift */; };
+		EF4C4DD62A51E60900D06B56 /* GoalsDetailUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DD52A51E60900D06B56 /* GoalsDetailUIView.swift */; };
+		EF4C4DD82A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DD72A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift */; };
+		EF4C4DDA2A51E64300D06B56 /* GoalsAutoDepositUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DD92A51E64300D06B56 /* GoalsAutoDepositUIView.swift */; };
 		EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684282A4DB52B0020D86C /* AppDelegate.swift */; };
 		EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */; };
 		EF9684322A4DB52C0020D86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9684312A4DB52C0020D86C /* Assets.xcassets */; };
@@ -80,6 +93,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EF2D00AF2A52F61A0077400F /* EditSavingsGoalsDetailsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSavingsGoalsDetailsUIView.swift; sourceTree = "<group>"; };
+		EF2D00B12A52F6690077400F /* EditSavingsSelectAccountUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSavingsSelectAccountUIView.swift; sourceTree = "<group>"; };
+		EF2D00B32A52F67B0077400F /* EditSavingMoneyBreakDownUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSavingMoneyBreakDownUIView.swift; sourceTree = "<group>"; };
+		EF2D00B52A52F6A40077400F /* EditChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditChartsUIView.swift; sourceTree = "<group>"; };
+		EF2D00B72A52F6B40077400F /* EditTransferUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTransferUIView.swift; sourceTree = "<group>"; };
+		EF2D00B92A52FA070077400F /* CreateGoalOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalOne.swift; sourceTree = "<group>"; };
+		EF2D00BB2A52FA110077400F /* CreateGoalTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalTwo.swift; sourceTree = "<group>"; };
+		EF2D00BD2A52FA1A0077400F /* CreateGoalThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalThree.swift; sourceTree = "<group>"; };
 		EF4C4D8F2A4F094E00D06B56 /* ChartsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsManager.swift; sourceTree = "<group>"; };
 		EF4C4D9C2A4F19B700D06B56 /* ActiveGoalsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveGoalsUIView.swift; sourceTree = "<group>"; };
 		EF4C4D9E2A4F1A7A00D06B56 /* SpendingGoalsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingGoalsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -103,6 +124,11 @@
 		EF4C4DC72A519FDC00D06B56 /* ProfileEditUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditUIView.swift; sourceTree = "<group>"; };
 		EF4C4DC92A51A60B00D06B56 /* MyInformationUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationUIView.swift; sourceTree = "<group>"; };
 		EF4C4DCB2A51A61900D06B56 /* MyAccountsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountsUIView.swift; sourceTree = "<group>"; };
+		EF4C4DCF2A51E4EB00D06B56 /* GoalsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDetailsViewController.swift; sourceTree = "<group>"; };
+		EF4C4DD32A51E5B300D06B56 /* GoalsDetailChartsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDetailChartsUIView.swift; sourceTree = "<group>"; };
+		EF4C4DD52A51E60900D06B56 /* GoalsDetailUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDetailUIView.swift; sourceTree = "<group>"; };
+		EF4C4DD72A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsMoneyBreakdownUIView.swift; sourceTree = "<group>"; };
+		EF4C4DD92A51E64300D06B56 /* GoalsAutoDepositUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAutoDepositUIView.swift; sourceTree = "<group>"; };
 		EF9684252A4DB52B0020D86C /* SpenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9684282A4DB52B0020D86C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +178,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF2D00A62A52F1CC0077400F /* GoalsDetailCompanents */ = {
+			isa = PBXGroup;
+			children = (
+				EF2D00AC2A52F2FE0077400F /* SavingsGoals */,
+				EF2D00AB2A52F2C30077400F /* SpendingGoals */,
+			);
+			path = GoalsDetailCompanents;
+			sourceTree = "<group>";
+		};
+		EF2D00A72A52F1F20077400F /* SelectCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF4C4DD32A51E5B300D06B56 /* GoalsDetailChartsUIView.swift */,
+				EF4C4DD52A51E60900D06B56 /* GoalsDetailUIView.swift */,
+				EF4C4DD72A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift */,
+				EF4C4DD92A51E64300D06B56 /* GoalsAutoDepositUIView.swift */,
+			);
+			path = SelectCell;
+			sourceTree = "<group>";
+		};
+		EF2D00A82A52F2430077400F /* EditGoal */ = {
+			isa = PBXGroup;
+			children = (
+				EF2D00AF2A52F61A0077400F /* EditSavingsGoalsDetailsUIView.swift */,
+				EF2D00B12A52F6690077400F /* EditSavingsSelectAccountUIView.swift */,
+				EF2D00B32A52F67B0077400F /* EditSavingMoneyBreakDownUIView.swift */,
+				EF2D00B52A52F6A40077400F /* EditChartsUIView.swift */,
+				EF2D00B72A52F6B40077400F /* EditTransferUIView.swift */,
+			);
+			path = EditGoal;
+			sourceTree = "<group>";
+		};
+		EF2D00A92A52F2530077400F /* CreateGoal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreateGoal;
+			sourceTree = "<group>";
+		};
+		EF2D00AA2A52F28E0077400F /* SelectCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SelectCell;
+			sourceTree = "<group>";
+		};
+		EF2D00AB2A52F2C30077400F /* SpendingGoals */ = {
+			isa = PBXGroup;
+			children = (
+				EF2D00AD2A52F32A0077400F /* EditGoal */,
+				EF2D00A92A52F2530077400F /* CreateGoal */,
+				EF2D00AA2A52F28E0077400F /* SelectCell */,
+			);
+			path = SpendingGoals;
+			sourceTree = "<group>";
+		};
+		EF2D00AC2A52F2FE0077400F /* SavingsGoals */ = {
+			isa = PBXGroup;
+			children = (
+				EF2D00AE2A52F3450077400F /* CreateGoal */,
+				EF2D00A82A52F2430077400F /* EditGoal */,
+				EF2D00A72A52F1F20077400F /* SelectCell */,
+			);
+			path = SavingsGoals;
+			sourceTree = "<group>";
+		};
+		EF2D00AD2A52F32A0077400F /* EditGoal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EditGoal;
+			sourceTree = "<group>";
+		};
+		EF2D00AE2A52F3450077400F /* CreateGoal */ = {
+			isa = PBXGroup;
+			children = (
+				EF2D00B92A52FA070077400F /* CreateGoalOne.swift */,
+				EF2D00BB2A52FA110077400F /* CreateGoalTwo.swift */,
+				EF2D00BD2A52FA1A0077400F /* CreateGoalThree.swift */,
+			);
+			path = CreateGoal;
+			sourceTree = "<group>";
+		};
 		EF4C4D9B2A4F18A900D06B56 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +318,54 @@
 			path = ProfileView;
 			sourceTree = "<group>";
 		};
+		EF4C4DCD2A51E46800D06B56 /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684442A4DB6050020D86C /* GoalsViewController */,
+				EF9684432A4DB6030020D86C /* DashboradViewController */,
+				EF96844C2A4DB6400020D86C /* SettingsViewController */,
+				EF96844B2A4DB63E0020D86C /* SupportViewController */,
+				EF96844A2A4DB6340020D86C /* ProfileViewController */,
+				EF9684492A4DB6310020D86C /* RecipientsViewController */,
+				EF9684482A4DB62E0020D86C /* DepositCheckViewController */,
+				EF9684472A4DB61B0020D86C /* PayBillsViewController */,
+				EF9684462A4DB6190020D86C /* TransferViewController */,
+				EF9684452A4DB6080020D86C /* SpendAnalysisViewController */,
+				EF96844D2A4DB6420020D86C /* LoginViewController */,
+			);
+			path = MainControllers;
+			sourceTree = "<group>";
+		};
+		EF4C4DCE2A51E48800D06B56 /* DetailsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF4C4DCF2A51E4EB00D06B56 /* GoalsDetailsViewController.swift */,
+			);
+			path = DetailsControllers;
+			sourceTree = "<group>";
+		};
+		EF4C4DD12A51E50100D06B56 /* MainCompanents */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684752A4DB7C50020D86C /* GoalsView */,
+				EF9684742A4DB7C20020D86C /* DashboardView */,
+				EF4C4DC62A519FC700D06B56 /* ProfileView */,
+				EF4C4DBB2A504C7200D06B56 /* RecipientsView */,
+				EF4C4DB42A4F65B300D06B56 /* PayBillsView */,
+				EF4C4DAB2A4F598400D06B56 /* TransferView */,
+				EF4C4DA22A4F49E800D06B56 /* SpendAnalysisView */,
+			);
+			path = MainCompanents;
+			sourceTree = "<group>";
+		};
+		EF4C4DD22A51E51100D06B56 /* DetailsCompanents */ = {
+			isa = PBXGroup;
+			children = (
+				EF2D00A62A52F1CC0077400F /* GoalsDetailCompanents */,
+			);
+			path = DetailsCompanents;
+			sourceTree = "<group>";
+		};
 		EF96841C2A4DB52B0020D86C = {
 			isa = PBXGroup;
 			children = (
@@ -254,17 +411,8 @@
 			isa = PBXGroup;
 			children = (
 				EF9684682A4DB72C0020D86C /* MainViewController */,
-				EF96844D2A4DB6420020D86C /* LoginViewController */,
-				EF9684442A4DB6050020D86C /* GoalsViewController */,
-				EF9684432A4DB6030020D86C /* DashboradViewController */,
-				EF96844C2A4DB6400020D86C /* SettingsViewController */,
-				EF96844B2A4DB63E0020D86C /* SupportViewController */,
-				EF96844A2A4DB6340020D86C /* ProfileViewController */,
-				EF9684492A4DB6310020D86C /* RecipientsViewController */,
-				EF9684482A4DB62E0020D86C /* DepositCheckViewController */,
-				EF9684472A4DB61B0020D86C /* PayBillsViewController */,
-				EF9684462A4DB6190020D86C /* TransferViewController */,
-				EF9684452A4DB6080020D86C /* SpendAnalysisViewController */,
+				EF4C4DCD2A51E46800D06B56 /* MainControllers */,
+				EF4C4DCE2A51E48800D06B56 /* DetailsControllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -282,13 +430,8 @@
 			isa = PBXGroup;
 			children = (
 				EF9684732A4DB7BD0020D86C /* SideBar */,
-				EF9684752A4DB7C50020D86C /* GoalsView */,
-				EF9684742A4DB7C20020D86C /* DashboardView */,
-				EF4C4DC62A519FC700D06B56 /* ProfileView */,
-				EF4C4DBB2A504C7200D06B56 /* RecipientsView */,
-				EF4C4DB42A4F65B300D06B56 /* PayBillsView */,
-				EF4C4DAB2A4F598400D06B56 /* TransferView */,
-				EF4C4DA22A4F49E800D06B56 /* SpendAnalysisView */,
+				EF4C4DD12A51E50100D06B56 /* MainCompanents */,
+				EF4C4DD22A51E51100D06B56 /* DetailsCompanents */,
 			);
 			path = Companents;
 			sourceTree = "<group>";
@@ -553,11 +696,14 @@
 				EF9684812A4DB82D0020D86C /* PinnedGoalsUIView.swift in Sources */,
 				EF9684892A4DB8720020D86C /* Extension+Textfield.swift in Sources */,
 				EF9684572A4DB6C70020D86C /* SpendAnalysisViewController.swift in Sources */,
+				EF4C4DDA2A51E64300D06B56 /* GoalsAutoDepositUIView.swift in Sources */,
 				EF4C4DA62A4F4A9700D06B56 /* DonutChartsUIView.swift in Sources */,
 				EF96846A2A4DB7580020D86C /* SideBarTableViewCell.swift in Sources */,
 				EF4C4DCA2A51A60B00D06B56 /* MyInformationUIView.swift in Sources */,
+				EF4C4DD42A51E5B300D06B56 /* GoalsDetailChartsUIView.swift in Sources */,
 				EF4C4DAF2A4F59FC00D06B56 /* HorizontalAccountTransfersUIView.swift in Sources */,
 				EF9684632A4DB70D0020D86C /* SupportViewController.swift in Sources */,
+				EF2D00B22A52F6690077400F /* EditSavingsSelectAccountUIView.swift in Sources */,
 				EF4C4D902A4F094E00D06B56 /* ChartsManager.swift in Sources */,
 				EF9684672A4DB71F0020D86C /* LoginViewController.swift in Sources */,
 				EF9684872A4DB86A0020D86C /* Extension+CGFloat.swift in Sources */,
@@ -573,15 +719,22 @@
 				EF4C4DBD2A504D6100D06B56 /* PinnedReicipientsUIView.swift in Sources */,
 				EF9684792A4DB7FA0020D86C /* QuickActionsUIView.swift in Sources */,
 				EF4C4DA12A4F1F7F00D06B56 /* TotalSpendUIView.swift in Sources */,
+				EF2D00B42A52F67B0077400F /* EditSavingMoneyBreakDownUIView.swift in Sources */,
+				EF4C4DD02A51E4EB00D06B56 /* GoalsDetailsViewController.swift in Sources */,
 				EF9684592A4DB6D40020D86C /* TransferViewController.swift in Sources */,
+				EF4C4DD62A51E60900D06B56 /* GoalsDetailUIView.swift in Sources */,
 				EF96845D2A4DB6ED0020D86C /* DepositCheckViewController.swift in Sources */,
+				EF2D00BE2A52FA1A0077400F /* CreateGoalThree.swift in Sources */,
 				EF4C4DAA2A4F4F0F00D06B56 /* CategoryCollectionViewCell.swift in Sources */,
+				EF2D00B62A52F6A40077400F /* EditChartsUIView.swift in Sources */,
 				EF4C4DBF2A504ED100D06B56 /* RecentRecipientsUIView.swift in Sources */,
 				EF9684612A4DB7040020D86C /* ProfileViewController.swift in Sources */,
+				EF4C4DD82A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift in Sources */,
 				EF96848D2A4DB8870020D86C /* Extension+ViewController.swift in Sources */,
 				EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */,
 				EF96847F2A4DB81B0020D86C /* SavingsGoalsUIView.swift in Sources */,
 				EF9684652A4DB7160020D86C /* SettingsViewController.swift in Sources */,
+				EF2D00BA2A52FA070077400F /* CreateGoalOne.swift in Sources */,
 				EF96846E2A4DB7790020D86C /* CreditUICollectionViewCell.swift in Sources */,
 				EF9684512A4DB69B0020D86C /* MainViewController.swift in Sources */,
 				EF96847D2A4DB80E0020D86C /* CreditUIView.swift in Sources */,
@@ -589,12 +742,14 @@
 				EF4C4DBA2A4F677000D06B56 /* PayeesCollectionViewCell.swift in Sources */,
 				EF4C4DB82A4F66B500D06B56 /* ActivityUIView.swift in Sources */,
 				EF9684702A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift in Sources */,
+				EF2D00B02A52F61A0077400F /* EditSavingsGoalsDetailsUIView.swift in Sources */,
 				EF4C4DC82A519FDC00D06B56 /* ProfileEditUIView.swift in Sources */,
 				EF96845B2A4DB6E40020D86C /* PayBillsViewController.swift in Sources */,
 				EF9684772A4DB7EC0020D86C /* SideBarUIView.swift in Sources */,
 				EF4C4DA42A4F4A8D00D06B56 /* DateUIView.swift in Sources */,
 				EF9684532A4DB6AC0020D86C /* DashboradViewController.swift in Sources */,
 				EF9684552A4DB6B90020D86C /* GoalsViewController.swift in Sources */,
+				EF2D00B82A52F6B40077400F /* EditTransferUIView.swift in Sources */,
 				EF4C4DA82A4F4AA400D06B56 /* CategoryListUIView.swift in Sources */,
 				EF9684832A4DB8350020D86C /* GoalsUIView.swift in Sources */,
 				EF96848B2A4DB87B0020D86C /* Extension+Cells.swift in Sources */,
@@ -603,6 +758,7 @@
 				EF4C4DC52A5050DD00D06B56 /* TransActionsUIView.swift in Sources */,
 				EF4C4DB12A4F5A0B00D06B56 /* RecentReicipientsTransferUIView.swift in Sources */,
 				EF4C4DB62A4F66AB00D06B56 /* PayUView.swift in Sources */,
+				EF2D00BC2A52FA110077400F /* CreateGoalTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

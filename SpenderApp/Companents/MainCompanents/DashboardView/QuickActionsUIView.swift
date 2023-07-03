@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol QuickActionsUIViewProtocol: AnyObject {
+    func tapped()
+}
+
 class QuickActionsUIView: UIView {
     
     private lazy var quickActionsLabel: UILabel = {
@@ -31,6 +35,8 @@ class QuickActionsUIView: UIView {
         button.configuration?.baseForegroundColor = .white
         
         button.translatesAutoresizingMaskIntoConstraints = false
+        
+        button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
         
         return button
     }()
@@ -76,6 +82,8 @@ class QuickActionsUIView: UIView {
         
         return stackView
     }()
+    
+    weak var delegate: QuickActionsUIViewProtocol?
 
     override init(frame: CGRect) {
         super .init(frame: frame)
@@ -104,6 +112,10 @@ class QuickActionsUIView: UIView {
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
+    }
+    
+    @objc private func tapped() {
+        self.delegate?.tapped()
     }
     
     required init(coder: NSCoder) {
