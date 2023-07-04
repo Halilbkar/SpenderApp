@@ -77,6 +77,10 @@
 		EF9684892A4DB8720020D86C /* Extension+Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684882A4DB8720020D86C /* Extension+Textfield.swift */; };
 		EF96848B2A4DB87B0020D86C /* Extension+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96848A2A4DB87B0020D86C /* Extension+Cells.swift */; };
 		EF96848D2A4DB8870020D86C /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96848C2A4DB8870020D86C /* Extension+ViewController.swift */; };
+		EFA3C0D62A5445800067E2FB /* EditGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3C0D52A5445800067E2FB /* EditGoalViewController.swift */; };
+		EFA3C0D82A54458C0067E2FB /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3C0D72A54458C0067E2FB /* CreateGoalViewController.swift */; };
+		EFA3C0DA2A544FE50067E2FB /* CreateGoalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3C0D92A544FE50067E2FB /* CreateGoalSection.swift */; };
+		EFA3C0DC2A5454A60067E2FB /* MainCreateGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3C0DB2A5454A60067E2FB /* MainCreateGoal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -164,6 +168,10 @@
 		EF9684882A4DB8720020D86C /* Extension+Textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Textfield.swift"; sourceTree = "<group>"; };
 		EF96848A2A4DB87B0020D86C /* Extension+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Cells.swift"; sourceTree = "<group>"; };
 		EF96848C2A4DB8870020D86C /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
+		EFA3C0D52A5445800067E2FB /* EditGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalViewController.swift; sourceTree = "<group>"; };
+		EFA3C0D72A54458C0067E2FB /* CreateGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalViewController.swift; sourceTree = "<group>"; };
+		EFA3C0D92A544FE50067E2FB /* CreateGoalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalSection.swift; sourceTree = "<group>"; };
+		EFA3C0DB2A5454A60067E2FB /* MainCreateGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCreateGoal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +262,7 @@
 		EF2D00AE2A52F3450077400F /* CreateGoal */ = {
 			isa = PBXGroup;
 			children = (
+				EFA3C0DB2A5454A60067E2FB /* MainCreateGoal.swift */,
 				EF2D00B92A52FA070077400F /* CreateGoalOne.swift */,
 				EF2D00BB2A52FA110077400F /* CreateGoalTwo.swift */,
 				EF2D00BD2A52FA1A0077400F /* CreateGoalThree.swift */,
@@ -340,6 +349,8 @@
 			isa = PBXGroup;
 			children = (
 				EF4C4DCF2A51E4EB00D06B56 /* GoalsDetailsViewController.swift */,
+				EFA3C0D52A5445800067E2FB /* EditGoalViewController.swift */,
+				EFA3C0D72A54458C0067E2FB /* CreateGoalViewController.swift */,
 			);
 			path = DetailsControllers;
 			sourceTree = "<group>";
@@ -460,6 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				EF9684842A4DB8570020D86C /* SideBarSection.swift */,
+				EFA3C0D92A544FE50067E2FB /* CreateGoalSection.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -719,6 +731,7 @@
 				EF4C4DBD2A504D6100D06B56 /* PinnedReicipientsUIView.swift in Sources */,
 				EF9684792A4DB7FA0020D86C /* QuickActionsUIView.swift in Sources */,
 				EF4C4DA12A4F1F7F00D06B56 /* TotalSpendUIView.swift in Sources */,
+				EFA3C0D62A5445800067E2FB /* EditGoalViewController.swift in Sources */,
 				EF2D00B42A52F67B0077400F /* EditSavingMoneyBreakDownUIView.swift in Sources */,
 				EF4C4DD02A51E4EB00D06B56 /* GoalsDetailsViewController.swift in Sources */,
 				EF9684592A4DB6D40020D86C /* TransferViewController.swift in Sources */,
@@ -743,16 +756,19 @@
 				EF4C4DB82A4F66B500D06B56 /* ActivityUIView.swift in Sources */,
 				EF9684702A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift in Sources */,
 				EF2D00B02A52F61A0077400F /* EditSavingsGoalsDetailsUIView.swift in Sources */,
+				EFA3C0DA2A544FE50067E2FB /* CreateGoalSection.swift in Sources */,
 				EF4C4DC82A519FDC00D06B56 /* ProfileEditUIView.swift in Sources */,
 				EF96845B2A4DB6E40020D86C /* PayBillsViewController.swift in Sources */,
 				EF9684772A4DB7EC0020D86C /* SideBarUIView.swift in Sources */,
 				EF4C4DA42A4F4A8D00D06B56 /* DateUIView.swift in Sources */,
 				EF9684532A4DB6AC0020D86C /* DashboradViewController.swift in Sources */,
 				EF9684552A4DB6B90020D86C /* GoalsViewController.swift in Sources */,
+				EFA3C0D82A54458C0067E2FB /* CreateGoalViewController.swift in Sources */,
 				EF2D00B82A52F6B40077400F /* EditTransferUIView.swift in Sources */,
 				EF4C4DA82A4F4AA400D06B56 /* CategoryListUIView.swift in Sources */,
 				EF9684832A4DB8350020D86C /* GoalsUIView.swift in Sources */,
 				EF96848B2A4DB87B0020D86C /* Extension+Cells.swift in Sources */,
+				EFA3C0DC2A5454A60067E2FB /* MainCreateGoal.swift in Sources */,
 				EF4C4D9F2A4F1A7A00D06B56 /* SpendingGoalsCollectionViewCell.swift in Sources */,
 				EF4C4DB32A4F630400D06B56 /* TransferCollectionViewCell.swift in Sources */,
 				EF4C4DC52A5050DD00D06B56 /* TransActionsUIView.swift in Sources */,

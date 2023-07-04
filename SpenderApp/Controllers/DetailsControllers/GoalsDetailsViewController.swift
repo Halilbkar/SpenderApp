@@ -71,7 +71,6 @@ class GoalsDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(named: "grey100")
-        
         navigationItem.title = "Goal"
         
         view.addSubview(scrollView)

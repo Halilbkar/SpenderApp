@@ -12,7 +12,7 @@ class EditSavingsSelectAccountUIView: UIView {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "Goal Details"
+        label.text = "Select Account"
         label.font = .boldSystemFont(ofSize: CGFloat.dWidth(padding: 20))
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -52,7 +52,7 @@ class EditSavingsSelectAccountUIView: UIView {
             startDateTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 16)),
             startDateTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
             startDateTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
-            startDateTextField.bottomAnchor.constraint(equalTo: bottomAnchor, constant: CGFloat.dHeight(padding: -16))
+            startDateTextField.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 40))
         ])
     }
     

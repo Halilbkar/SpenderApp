@@ -7,8 +7,8 @@
 
 import UIKit
 
-class CreateGoalOne: UIView {
-
+class CreateGoalOne: MainCreateGoal {
+    
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         
@@ -20,8 +20,8 @@ class CreateGoalOne: UIView {
     }()
     
     private lazy var goalNameTextField: UITextField = {
-        let textField = UITextField()
-        
+        let textField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 40))
+
         textField.placeholder = "Goal Name"
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
@@ -31,8 +31,8 @@ class CreateGoalOne: UIView {
     }()
     
     private lazy var startDateTextField: UITextField = {
-        let textField = UITextField()
-        
+        let textField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 40))
+
         textField.placeholder = "Last Name"
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
@@ -42,8 +42,8 @@ class CreateGoalOne: UIView {
     }()
     
     private lazy var completionDateTextField: UITextField = {
-        let textField = UITextField()
-        
+        let textField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 40))
+
         textField.placeholder = "E-mail"
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
@@ -53,8 +53,8 @@ class CreateGoalOne: UIView {
     }()
     
     private lazy var notesTextField: UITextField = {
-        let textField = UITextField()
-        
+        let textField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 40))
+
         textField.placeholder = "Phone"
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
@@ -64,8 +64,8 @@ class CreateGoalOne: UIView {
     }()
     
     private lazy var linkTextField: UITextField = {
-        let textField = UITextField()
-        
+        let textField = UITextField(frame: CGRect(x: 0, y: 0, width: 0, height: 40))
+
         textField.placeholder = "Street"
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
@@ -106,8 +106,8 @@ class CreateGoalOne: UIView {
         super.layoutSubviews()
         
         NSLayoutConstraint.activate([
-        
-            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: CGFloat.dHeight(padding: 8)),
+            
+            titleLabel.topAnchor.constraint(equalTo: topAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
             titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
             

@@ -7,14 +7,52 @@
 
 import UIKit
 
-class CreateGoalThree: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class CreateGoalThree: MainCreateGoal {
+   
+    private lazy var createGoalOne: CreateGoalOne = {
+        let view = CreateGoalOne()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
+    private lazy var createGoalTwo: CreateGoalTwo = {
+        let view = CreateGoalTwo()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
+    override init(frame: CGRect) {
+        super .init(frame: frame)
+        
+        layer.cornerRadius = 15
+        backgroundColor = .clear
+        
+        addSubview(createGoalOne)
+        addSubview(createGoalTwo)
     }
-    */
-
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+                
+        NSLayoutConstraint.activate([
+    
+            createGoalOne.topAnchor.constraint(equalTo: topAnchor),
+            createGoalOne.leadingAnchor.constraint(equalTo: leadingAnchor),
+            createGoalOne.trailingAnchor.constraint(equalTo: trailingAnchor),
+            createGoalOne.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 400)),
+            
+            createGoalTwo.topAnchor.constraint(equalTo: createGoalOne.bottomAnchor,constant: CGFloat.dHeight(padding: 36)),
+            createGoalTwo.leadingAnchor.constraint(equalTo: leadingAnchor),
+            createGoalTwo.trailingAnchor.constraint(equalTo: trailingAnchor),
+            createGoalTwo.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 300))
+        ])
+    }
+    
+    required init(coder: NSCoder) {
+        fatalError()
+    }
 }

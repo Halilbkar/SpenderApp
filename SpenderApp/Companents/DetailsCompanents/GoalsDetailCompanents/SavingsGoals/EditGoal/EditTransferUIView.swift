@@ -12,7 +12,7 @@ class EditTransferUIView: UIView {
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "Goal Details"
+        label.text = "Transfer"
         label.font = .boldSystemFont(ofSize: CGFloat.dWidth(padding: 20))
         label.translatesAutoresizingMaskIntoConstraints = false
         

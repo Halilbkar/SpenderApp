@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EditSavingsGoalsUIView: UIView {
+class EditSavingsGoalsDetailsUIView: UIView {
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
