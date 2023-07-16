@@ -8,7 +8,7 @@
 import UIKit
 
 protocol QuickActionsUIViewProtocol: AnyObject {
-    func tapped()
+    func tapped(toVC: SideBarSection)
 }
 
 class QuickActionsUIView: UIView {
@@ -24,63 +24,23 @@ class QuickActionsUIView: UIView {
         return label
     }()
     
-    private lazy var payBillsButton: UIButton = {
-        let button = UIButton()
+    private lazy var quickActionsCollectionView: UICollectionView = {
         
-        button.configuration = .filled()
-        button.configuration?.cornerStyle = .capsule
-        button.configuration?.buttonSize = .mini
-        button.configuration?.title = "Pay Bills"
-        button.configuration?.baseBackgroundColor = .black
-        button.configuration?.baseForegroundColor = .white
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 134, height: 25)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+        layout.minimumInteritemSpacing = 16
         
-        button.translatesAutoresizingMaskIntoConstraints = false
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.register(QuickActionsCollectionViewCell.self, forCellWithReuseIdentifier: QuickActionsCollectionViewCell.identifier)
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = .clear
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
-        button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
-        
-        return button
-    }()
-    
-    private lazy var sendMoneyButton: UIButton = {
-        let button = UIButton()
-        
-        button.configuration = .filled()
-        button.configuration?.cornerStyle = .capsule
-        button.configuration?.buttonSize = .mini
-        button.configuration?.title = "Send Money"
-        button.configuration?.baseBackgroundColor = .black
-        button.configuration?.baseForegroundColor = .white
-        
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
-    
-    private lazy var requestMoneyButton: UIButton = {
-        let button = UIButton()
-        
-        button.configuration = .filled()
-        button.configuration?.cornerStyle = .capsule
-        button.configuration?.buttonSize = .mini
-        button.configuration?.title = "Request Money"
-        button.configuration?.baseBackgroundColor = .black
-        button.configuration?.baseForegroundColor = .white
-        
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
-   
-    private lazy var stackView: UIStackView = {
-        let stackView = UIStackView()
-        
-        stackView.axis = .horizontal
-        stackView.spacing = 8
-        stackView.alignment = .fill
-        stackView.distribution = .fillProportionally
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        return stackView
+        return collectionView
     }()
     
     weak var delegate: QuickActionsUIViewProtocol?
@@ -91,11 +51,7 @@ class QuickActionsUIView: UIView {
         backgroundColor = .clear
         
         addSubview(quickActionsLabel)
-        addSubview(stackView)
-        
-        stackView.addArrangedSubview(payBillsButton)
-        stackView.addArrangedSubview(sendMoneyButton)
-        stackView.addArrangedSubview(requestMoneyButton)
+        addSubview(quickActionsCollectionView)
     }
     
     override func layoutSubviews() {
@@ -107,18 +63,31 @@ class QuickActionsUIView: UIView {
             quickActionsLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
             quickActionsLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
 
-            stackView.topAnchor.constraint(equalTo: quickActionsLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 8)),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            quickActionsCollectionView.topAnchor.constraint(equalTo: quickActionsLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 8)),
+            quickActionsCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            quickActionsCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            quickActionsCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
-    }
-    
-    @objc private func tapped() {
-        self.delegate?.tapped()
     }
     
     required init(coder: NSCoder) {
         fatalError()
+    }
+}
+
+extension QuickActionsUIView: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: QuickActionsCollectionViewCell.identifier, for: indexPath) as! QuickActionsCollectionViewCell
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.tapped(toVC: .goals)
     }
 }

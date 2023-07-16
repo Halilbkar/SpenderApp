@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DashboradViewController: UIViewController {
+class DashboradViewController: SubViewController {
     
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -52,7 +52,7 @@ class DashboradViewController: UIViewController {
 
         return view
     }()
-        
+                
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -106,7 +106,8 @@ class DashboradViewController: UIViewController {
 }
 
 extension DashboradViewController: QuickActionsUIViewProtocol {
-    func tapped() {
-        navigationController?.pushViewController(PayBillsViewController(), animated: true)
+    func tapped(toVC: SideBarSection) {
+        PushManager.shared.toVC = toVC.vc
+        NotificationCenter.default.post(name: NSNotification.Name("pushVC"), object: nil)
     }
 }

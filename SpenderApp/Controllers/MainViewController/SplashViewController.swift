@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class SplashViewController: UIViewController {
     
@@ -83,6 +84,7 @@ class SplashViewController: UIViewController {
     }
     
     private func navigateToNextScreen() {
+        
         let loginViewController = LoginViewController()
         navigationController?.pushViewController(loginViewController, animated: true)
     }

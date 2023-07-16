@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GoalsViewController: UIViewController {
+class GoalsViewController: SubViewController {
     
     private lazy var segmentedControl: UISegmentedControl = {
         let segmentedControl = UISegmentedControl(items: ["Savings Goals", "Spending Goals"])

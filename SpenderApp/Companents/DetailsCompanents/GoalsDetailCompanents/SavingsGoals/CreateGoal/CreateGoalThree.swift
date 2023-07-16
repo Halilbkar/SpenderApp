@@ -45,7 +45,7 @@ class CreateGoalThree: MainCreateGoal {
             createGoalOne.trailingAnchor.constraint(equalTo: trailingAnchor),
             createGoalOne.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 400)),
             
-            createGoalTwo.topAnchor.constraint(equalTo: createGoalOne.bottomAnchor,constant: CGFloat.dHeight(padding: 36)),
+            createGoalTwo.topAnchor.constraint(equalTo: createGoalOne.bottomAnchor,constant: CGFloat.dHeight(padding: 12)),
             createGoalTwo.leadingAnchor.constraint(equalTo: leadingAnchor),
             createGoalTwo.trailingAnchor.constraint(equalTo: trailingAnchor),
             createGoalTwo.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 300))

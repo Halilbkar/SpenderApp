@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TransferViewController: UIViewController {
+class TransferViewController: SubViewController {
     
     private lazy var verticalTransfersUIView: VerticalAccountTransfersUIView = {
         let view = VerticalAccountTransfersUIView()

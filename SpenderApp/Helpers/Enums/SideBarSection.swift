@@ -8,19 +8,19 @@
 import Foundation
 import UIKit
 
-enum SideBarSection: String, CaseIterable {
-    case dashboard = "Dashboard"
-    case goals = "Goals"
-    case spendAnalysis = "Spend Analysis"
-    case transfer = "Transfer"
-    case payBills = "Pay Bills"
-    case depositCheck = "DepositCheck"
-    case recipients = "Recipients"
-    case profile = "Profile"
-    case support = "Support"
-    case settings = "Settings"
+enum SideBarSection: Int, CaseIterable {
+    case dashboard = 0
+    case goals
+    case spendAnalysis
+    case transfer
+    case payBills
+    case depositCheck
+    case recipients
+    case profile
+    case support
+    case settings
     
-    var view: UIViewController {
+    var vc: SubViewController {
         switch self {
         case .dashboard:
             return DashboradViewController()
@@ -42,6 +42,31 @@ enum SideBarSection: String, CaseIterable {
             return SupportViewController()
         case .settings:
             return SettingsViewController()
+        }
+    }
+    
+    var title: String {
+        switch self {
+        case .dashboard:
+            return "Dashboard"
+        case .goals:
+            return "Goals"
+        case .spendAnalysis:
+            return "Spend Analysis"
+        case .transfer:
+            return "Transfer"
+        case .payBills:
+            return "Pay Bills"
+        case .depositCheck:
+            return "DepositCheck"
+        case .recipients:
+            return "Recipients"
+        case .profile:
+            return "Profile"
+        case .support:
+            return "Support"
+        case .settings:
+            return "Settings"
         }
     }
 }

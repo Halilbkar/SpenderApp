@@ -9,7 +9,7 @@ import UIKit
 
 class ProfileEditUIView: UIView {
     
-    private lazy var imageView: UIImageView = {
+    lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         
         imageView.clipsToBounds = true

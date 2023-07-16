@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RecipientsViewController: UIViewController {
+class RecipientsViewController: SubViewController {
     
     private lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()

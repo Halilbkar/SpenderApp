@@ -1,14 +1,14 @@
 //
-//  LoginViewController.swift
+//  CreateUserViewController.swift
 //  SpenderApp
 //
-//  Created by Halil Bakar on 29.06.2023.
+//  Created by Halil Bakar on 14.07.2023.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    
+class CreateUserViewController: UIViewController {
+
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         
@@ -19,41 +19,53 @@ class LoginViewController: UIViewController {
         return imageView
         
     }()
-    
+
     private lazy var loginLabel: UILabel = {
         let label = UILabel()
         
-        label.text = "Log In"
+        label.text = "Create User"
         label.font = .boldSystemFont(ofSize: 16)
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
     }()
-    
+
     private lazy var userNameTextField: UITextField = {
         let textField = UITextField()
         
         textField.placeholder = "Username"
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
+        textField.addLeftPadding(textField: textField)
         textField.translatesAutoresizingMaskIntoConstraints = false
         
         return textField
     }()
 
-    private lazy var passwordTextField: UITextField = {
+    private lazy var passTextField: UITextField = {
         let textField = UITextField()
         
         textField.placeholder = "Password"
         textField.backgroundColor = .white
         textField.layer.cornerRadius = 12
+        textField.addLeftPadding(textField: textField)
         textField.translatesAutoresizingMaskIntoConstraints = false
-        
-        textField.addRightImageButton(image: UIImage(named: "faceID")!, target: self, action: #selector(buttonTapped))
-        
+                
         return textField
     }()
     
+    private lazy var tryPassTextField: UITextField = {
+        let textField = UITextField()
+        
+        textField.placeholder = "Try Password"
+        textField.backgroundColor = .white
+        textField.layer.cornerRadius = 12
+        textField.addLeftPadding(textField: textField)
+        textField.translatesAutoresizingMaskIntoConstraints = false
+                
+        return textField
+    }()
+
     private lazy var oneStackView: UIStackView = {
         let stackView = UIStackView()
         
@@ -65,35 +77,23 @@ class LoginViewController: UIViewController {
         
         return stackView
     }()
-    
+
     private lazy var createAccountButton: UIButton = {
-        let button = UIButton()
-        
-        button.configuration = .plain()
-        button.configuration?.baseForegroundColor = .black
-        button.configuration?.title = "Create Account"
-        
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
-    
-    private lazy var loginButton: UIButton = {
         let button = UIButton()
         
         button.configuration = .filled()
         button.configuration?.cornerStyle = .capsule
         button.configuration?.baseBackgroundColor = .gray
         button.configuration?.baseForegroundColor = .white
-        button.configuration?.title = "Log In"
+        button.configuration?.title = "Create Account"
         
         button.translatesAutoresizingMaskIntoConstraints = false
         
-        button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(createButtonTapped), for: .touchUpInside)
         
         return button
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -103,12 +103,12 @@ class LoginViewController: UIViewController {
         view.addSubview(loginLabel)
         view.addSubview(oneStackView)
         view.addSubview(createAccountButton)
-        view.addSubview(loginButton)
         
         oneStackView.addArrangedSubview(userNameTextField)
-        oneStackView.addArrangedSubview(passwordTextField)
+        oneStackView.addArrangedSubview(passTextField)
     }
     
+
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
@@ -126,23 +126,13 @@ class LoginViewController: UIViewController {
             oneStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
             oneStackView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 100)),
             
-            loginButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: CGFloat.dHeight(padding: -48)),
-            loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: CGFloat.dWidth(padding: 83)),
-            loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat.dWidth(padding: -83)),
-            
-            createAccountButton.bottomAnchor.constraint(equalTo: loginButton.topAnchor, constant: CGFloat.dHeight(padding: -24)),
+            createAccountButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: CGFloat.dHeight(padding: -48)),
             createAccountButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: CGFloat.dWidth(padding: 83)),
             createAccountButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat.dWidth(padding: -83)),
-            
         ])
     }
     
-    @objc private func tapped() {
-        let view = MainViewController()
-        navigationController?.pushViewController(view, animated: true)
-    }
-    
-    @objc private func buttonTapped() {
-        
+    @objc private func createButtonTapped() {
+        navigationController?.popViewController(animated: true)
     }
 }

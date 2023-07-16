@@ -58,7 +58,7 @@ class MainViewController: UIViewController {
         return view
     }()
     
-    private lazy var containerView: UIView = {
+    lazy var containerView: UIView = {
         let view = UIView()
         
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -66,7 +66,7 @@ class MainViewController: UIViewController {
 
         return view
     }()
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -81,12 +81,17 @@ class MainViewController: UIViewController {
         headerView.addSubview(headerLabel)
         headerView.addSubview(headerButton)
         
-        self.displayViewController(SideBarSection.dashboard.view, containerView: containerView)
+        self.displayViewController(SideBarSection.dashboard.vc, containerView: containerView)
+        NotificationCenter.default.addObserver(self, selector: #selector(pushVC), name: NSNotification.Name(rawValue: "pushVC"), object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "pushVC"), object: nil)
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        
+                
         NSLayoutConstraint.activate([
             
             headerView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -127,14 +132,24 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: SideBarUIViewProtocol {
-    func selectTitle(with sectionTitle: String) {
-        headerLabel.text = sectionTitle
+    func selectTitle(with sectionTitle: SideBarSection) {
+        headerLabel.text = sectionTitle.title
         sideBarConfig()
     }
     
-    func selectSection(with selectSection: String) {
-        guard let selectView = SideBarSection(rawValue: selectSection)?.view else { return }
+    func selectSection(with selectSection: SideBarSection) {
+        guard let selectView = SideBarSection(rawValue: selectSection.rawValue)?.vc else { return }
         
         self.displayViewController(selectView, containerView: containerView)
+    }
+    
+    func logoutTapped() {
+        let view = LoginViewController()
+        navigationController?.pushViewController(view, animated: true)
+    }
+    
+    @objc private func pushVC() {
+        guard let toVC = PushManager.shared.toVC else { return }
+        displayViewController(toVC, containerView: self.containerView)
     }
 }

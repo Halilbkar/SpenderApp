@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DepositCheckViewController: UIViewController {
+class DepositCheckViewController: SubViewController {
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()

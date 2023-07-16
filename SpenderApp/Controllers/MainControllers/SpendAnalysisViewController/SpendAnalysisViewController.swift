@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SpendAnalysisViewController: UIViewController {
+class SpendAnalysisViewController: SubViewController {
     
     private lazy var dateUIView: DateUIView = {
         let view = DateUIView()

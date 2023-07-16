@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SDWebImage
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: SubViewController {
     
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -43,7 +44,9 @@ class ProfileViewController: UIViewController {
         
         return view
     }()
-
+            
+    var photoURL: URL?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,12 +57,14 @@ class ProfileViewController: UIViewController {
         scrollView.addSubview(profileEditUIView)
         scrollView.addSubview(myInformationUIView)
         scrollView.addSubview(myAccountsUIView)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         scrollView.contentSize = CGSize(width: view.frame.size.width, height: 1000)
+        profilePictureConfig()
     }
     
     override func viewWillLayoutSubviews() {
@@ -87,5 +92,18 @@ class ProfileViewController: UIViewController {
             myAccountsUIView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             myAccountsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 180))
         ])
+    }
+    
+    private func profilePictureConfig() {
+        guard let stringURL = photoURL?.absoluteString else { return }
+        if let url = URL(string: stringURL) {
+            profileEditUIView.imageView.sd_setImage(with: url, completed: { (image, error, cacheType, imageURL) in
+                if let error = error {
+                    print("Görüntü indirme hatası: \(error.localizedDescription)")
+                } else {
+                    print("Görüntü başarıyla indirildi ve görüntülendi")
+                }
+            })
+        }
     }
 }

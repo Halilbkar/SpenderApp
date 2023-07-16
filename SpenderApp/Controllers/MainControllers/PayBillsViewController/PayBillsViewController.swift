@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PayBillsViewController: UIViewController {
+class PayBillsViewController: SubViewController {
     
     private lazy var segmentedControl: UISegmentedControl = {
         let segmentedControl = UISegmentedControl(items: ["Pay", "Activity"])

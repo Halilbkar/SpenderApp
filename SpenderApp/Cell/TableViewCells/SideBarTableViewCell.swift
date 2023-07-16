@@ -55,8 +55,8 @@ class SideBarTableViewCell: UITableViewCell {
         ])
     }
     
-    func config(with section: SideBarSection.RawValue) {
-        sectionLabel.text = section
+    func config(with section: SideBarSection) {
+        sectionLabel.text = section.title
     }
     
     func didSelectConfig() {
