@@ -36,6 +36,10 @@ class QuickActionsCollectionViewCell: UICollectionViewCell {
         actionLabel.frame = bounds
     }
     
+    func config(with toController: SideBarSection) {
+        actionLabel.text = toController.title
+    }
+    
     required init(coder: NSCoder) {
         fatalError()
     }

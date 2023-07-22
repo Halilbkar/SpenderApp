@@ -70,6 +70,7 @@ class SideBarUIView: UIView {
 
         addSubview(containerView)
         addSubview(logoutButton)
+        
         containerView.addSubview(sideBarTableView)
     }
     

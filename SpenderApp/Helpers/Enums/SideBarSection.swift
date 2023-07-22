@@ -20,28 +20,28 @@ enum SideBarSection: Int, CaseIterable {
     case support
     case settings
     
-    var vc: SubViewController {
+    var view: CommonUIView {
         switch self {
         case .dashboard:
-            return DashboradViewController()
+            return MainDashboradUIView()
         case .goals:
-            return GoalsViewController()
+            return MainGoalsUIView()
         case .spendAnalysis:
-            return SpendAnalysisViewController()
+            return MainSpendAnalysisUIView()
         case .transfer:
-            return TransferViewController()
+            return MainTransferUIView()
         case .payBills:
-            return PayBillsViewController()
+            return MainPayBillsUIView()
         case .depositCheck:
-            return DepositCheckViewController()
+            return MainDepositCheckUIView()
         case .recipients:
-            return RecipientsViewController()
+            return MainRecipientsUIView()
         case .profile:
-            return ProfileViewController()
+            return MainProfileUIView()
         case .support:
-            return SupportViewController()
+            return MainSupportUIView()
         case .settings:
-            return SettingsViewController()
+            return MainSettingsUIView()
         }
     }
     

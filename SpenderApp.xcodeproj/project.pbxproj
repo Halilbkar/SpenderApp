@@ -42,13 +42,20 @@
 		EF3160812A5DAAD4000BB17E /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF3160802A5DAAD4000BB17E /* FirebaseRemoteConfigSwift */; };
 		EF3160832A5DAAD4000BB17E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EF3160822A5DAAD4000BB17E /* FirebaseStorage */; };
 		EF3160852A5DAAD4000BB17E /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = EF3160842A5DAAD4000BB17E /* FirebaseStorageCombine-Community */; };
-		EF3160872A5DAC82000BB17E /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3160862A5DAC82000BB17E /* SubViewController.swift */; };
-		EF3160892A616F98000BB17E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF3160882A616F98000BB17E /* GoogleService-Info.plist */; };
 		EF31608B2A617077000BB17E /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF31608A2A617077000BB17E /* CreateUserViewController.swift */; };
 		EF31608E2A617316000BB17E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EF31608D2A617316000BB17E /* GoogleSignIn */; };
 		EF3160902A617316000BB17E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF31608F2A617316000BB17E /* GoogleSignInSwift */; };
 		EF3160952A617721000BB17E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3160942A617721000BB17E /* LoginViewModel.swift */; };
 		EF3160992A618C2D000BB17E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EF3160982A618C2D000BB17E /* SDWebImage */; };
+		EF38ABAE2A697A2C000DBE12 /* CommonUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38ABAD2A697A2C000DBE12 /* CommonUIView.swift */; };
+		EF3AB2232A6B1B5400AB4B3A /* CreateUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2222A6B1B5400AB4B3A /* CreateUserViewModel.swift */; };
+		EF3AB2252A6B2E7800AB4B3A /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2242A6B2E7800AB4B3A /* FirebaseStorageManager.swift */; };
+		EF3AB2272A6B31FE00AB4B3A /* FirebaseDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2262A6B31FE00AB4B3A /* FirebaseDatabaseManager.swift */; };
+		EF3AB2292A6B3E2000AB4B3A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2282A6B3E2000AB4B3A /* Users.swift */; };
+		EF3AB22B2A6C755700AB4B3A /* FirebaseAccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB22A2A6C755700AB4B3A /* FirebaseAccountManager.swift */; };
+		EF3AB2302A6C7F7100AB4B3A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB22F2A6C7F7100AB4B3A /* MainViewModel.swift */; };
+		EF3AB2322A6C80FA00AB4B3A /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2312A6C80FA00AB4B3A /* MainDataSource.swift */; };
+		EF3AB2342A6C85F500AB4B3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF3AB2332A6C85F500AB4B3A /* GoogleService-Info.plist */; };
 		EF4C4D902A4F094E00D06B56 /* ChartsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4D8F2A4F094E00D06B56 /* ChartsManager.swift */; };
 		EF4C4D942A4F09FE00D06B56 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = EF4C4D932A4F09FE00D06B56 /* DGCharts */; };
 		EF4C4D9D2A4F19B700D06B56 /* ActiveGoalsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4D9C2A4F19B700D06B56 /* ActiveGoalsUIView.swift */; };
@@ -84,16 +91,16 @@
 		EF9684352A4DB52C0020D86C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9684332A4DB52C0020D86C /* LaunchScreen.storyboard */; };
 		EF96844F2A4DB68E0020D86C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96844E2A4DB68E0020D86C /* SplashViewController.swift */; };
 		EF9684512A4DB69B0020D86C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684502A4DB69B0020D86C /* MainViewController.swift */; };
-		EF9684532A4DB6AC0020D86C /* DashboradViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684522A4DB6AC0020D86C /* DashboradViewController.swift */; };
-		EF9684552A4DB6B90020D86C /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684542A4DB6B90020D86C /* GoalsViewController.swift */; };
-		EF9684572A4DB6C70020D86C /* SpendAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684562A4DB6C70020D86C /* SpendAnalysisViewController.swift */; };
-		EF9684592A4DB6D40020D86C /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684582A4DB6D40020D86C /* TransferViewController.swift */; };
-		EF96845B2A4DB6E40020D86C /* PayBillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96845A2A4DB6E40020D86C /* PayBillsViewController.swift */; };
-		EF96845D2A4DB6ED0020D86C /* DepositCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96845C2A4DB6ED0020D86C /* DepositCheckViewController.swift */; };
-		EF96845F2A4DB6F70020D86C /* RecipientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96845E2A4DB6F70020D86C /* RecipientsViewController.swift */; };
-		EF9684612A4DB7040020D86C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684602A4DB7040020D86C /* ProfileViewController.swift */; };
-		EF9684632A4DB70D0020D86C /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684622A4DB70D0020D86C /* SupportViewController.swift */; };
-		EF9684652A4DB7160020D86C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684642A4DB7160020D86C /* SettingsViewController.swift */; };
+		EF9684532A4DB6AC0020D86C /* MainDashboradUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684522A4DB6AC0020D86C /* MainDashboradUIView.swift */; };
+		EF9684552A4DB6B90020D86C /* MainGoalsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684542A4DB6B90020D86C /* MainGoalsUIView.swift */; };
+		EF9684572A4DB6C70020D86C /* MainSpendAnalysisUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684562A4DB6C70020D86C /* MainSpendAnalysisUIView.swift */; };
+		EF9684592A4DB6D40020D86C /* MainTransferUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684582A4DB6D40020D86C /* MainTransferUIView.swift */; };
+		EF96845B2A4DB6E40020D86C /* MainPayBillsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96845A2A4DB6E40020D86C /* MainPayBillsUIView.swift */; };
+		EF96845D2A4DB6ED0020D86C /* MainDepositCheckUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96845C2A4DB6ED0020D86C /* MainDepositCheckUIView.swift */; };
+		EF96845F2A4DB6F70020D86C /* MainRecipientsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96845E2A4DB6F70020D86C /* MainRecipientsUIView.swift */; };
+		EF9684612A4DB7040020D86C /* MainProfileUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684602A4DB7040020D86C /* MainProfileUIView.swift */; };
+		EF9684632A4DB70D0020D86C /* MainSupportUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684622A4DB70D0020D86C /* MainSupportUIView.swift */; };
+		EF9684652A4DB7160020D86C /* MainSettingsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684642A4DB7160020D86C /* MainSettingsUIView.swift */; };
 		EF9684672A4DB71F0020D86C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684662A4DB71F0020D86C /* LoginViewController.swift */; };
 		EF96846A2A4DB7580020D86C /* SideBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684692A4DB7580020D86C /* SideBarTableViewCell.swift */; };
 		EF96846C2A4DB76E0020D86C /* BankingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96846B2A4DB76D0020D86C /* BankingCollectionViewCell.swift */; };
@@ -116,7 +123,6 @@
 		EFA3C0DA2A544FE50067E2FB /* CreateGoalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3C0D92A544FE50067E2FB /* CreateGoalSection.swift */; };
 		EFA3C0DC2A5454A60067E2FB /* MainCreateGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3C0DB2A5454A60067E2FB /* MainCreateGoal.swift */; };
 		EFD442A22A585B10005DB172 /* QuickActionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD442A12A585B10005DB172 /* QuickActionsCollectionViewCell.swift */; };
-		EFEB365F2A642239001B782C /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB365E2A642239001B782C /* PushManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -141,10 +147,17 @@
 		EF2D00B92A52FA070077400F /* CreateGoalOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalOne.swift; sourceTree = "<group>"; };
 		EF2D00BB2A52FA110077400F /* CreateGoalTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalTwo.swift; sourceTree = "<group>"; };
 		EF2D00BD2A52FA1A0077400F /* CreateGoalThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalThree.swift; sourceTree = "<group>"; };
-		EF3160862A5DAC82000BB17E /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
-		EF3160882A616F98000BB17E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF31608A2A617077000BB17E /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		EF3160942A617721000BB17E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EF38ABAD2A697A2C000DBE12 /* CommonUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUIView.swift; sourceTree = "<group>"; };
+		EF3AB2222A6B1B5400AB4B3A /* CreateUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewModel.swift; sourceTree = "<group>"; };
+		EF3AB2242A6B2E7800AB4B3A /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
+		EF3AB2262A6B31FE00AB4B3A /* FirebaseDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseManager.swift; sourceTree = "<group>"; };
+		EF3AB2282A6B3E2000AB4B3A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		EF3AB22A2A6C755700AB4B3A /* FirebaseAccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAccountManager.swift; sourceTree = "<group>"; };
+		EF3AB22F2A6C7F7100AB4B3A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		EF3AB2312A6C80FA00AB4B3A /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
+		EF3AB2332A6C85F500AB4B3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF4C4D8F2A4F094E00D06B56 /* ChartsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsManager.swift; sourceTree = "<group>"; };
 		EF4C4D9C2A4F19B700D06B56 /* ActiveGoalsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveGoalsUIView.swift; sourceTree = "<group>"; };
 		EF4C4D9E2A4F1A7A00D06B56 /* SpendingGoalsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingGoalsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -181,16 +194,16 @@
 		EF9684362A4DB52C0020D86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF96844E2A4DB68E0020D86C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		EF9684502A4DB69B0020D86C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		EF9684522A4DB6AC0020D86C /* DashboradViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboradViewController.swift; sourceTree = "<group>"; };
-		EF9684542A4DB6B90020D86C /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
-		EF9684562A4DB6C70020D86C /* SpendAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendAnalysisViewController.swift; sourceTree = "<group>"; };
-		EF9684582A4DB6D40020D86C /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
-		EF96845A2A4DB6E40020D86C /* PayBillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayBillsViewController.swift; sourceTree = "<group>"; };
-		EF96845C2A4DB6ED0020D86C /* DepositCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositCheckViewController.swift; sourceTree = "<group>"; };
-		EF96845E2A4DB6F70020D86C /* RecipientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientsViewController.swift; sourceTree = "<group>"; };
-		EF9684602A4DB7040020D86C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		EF9684622A4DB70D0020D86C /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
-		EF9684642A4DB7160020D86C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EF9684522A4DB6AC0020D86C /* MainDashboradUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboradUIView.swift; sourceTree = "<group>"; };
+		EF9684542A4DB6B90020D86C /* MainGoalsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGoalsUIView.swift; sourceTree = "<group>"; };
+		EF9684562A4DB6C70020D86C /* MainSpendAnalysisUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSpendAnalysisUIView.swift; sourceTree = "<group>"; };
+		EF9684582A4DB6D40020D86C /* MainTransferUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTransferUIView.swift; sourceTree = "<group>"; };
+		EF96845A2A4DB6E40020D86C /* MainPayBillsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPayBillsUIView.swift; sourceTree = "<group>"; };
+		EF96845C2A4DB6ED0020D86C /* MainDepositCheckUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDepositCheckUIView.swift; sourceTree = "<group>"; };
+		EF96845E2A4DB6F70020D86C /* MainRecipientsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecipientsUIView.swift; sourceTree = "<group>"; };
+		EF9684602A4DB7040020D86C /* MainProfileUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileUIView.swift; sourceTree = "<group>"; };
+		EF9684622A4DB70D0020D86C /* MainSupportUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSupportUIView.swift; sourceTree = "<group>"; };
+		EF9684642A4DB7160020D86C /* MainSettingsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsUIView.swift; sourceTree = "<group>"; };
 		EF9684662A4DB71F0020D86C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EF9684692A4DB7580020D86C /* SideBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarTableViewCell.swift; sourceTree = "<group>"; };
 		EF96846B2A4DB76D0020D86C /* BankingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -213,7 +226,6 @@
 		EFA3C0D92A544FE50067E2FB /* CreateGoalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalSection.swift; sourceTree = "<group>"; };
 		EFA3C0DB2A5454A60067E2FB /* MainCreateGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCreateGoal.swift; sourceTree = "<group>"; };
 		EFD442A12A585B10005DB172 /* QuickActionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionsCollectionViewCell.swift; sourceTree = "<group>"; };
-		EFEB365E2A642239001B782C /* PushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,15 +367,69 @@
 			isa = PBXGroup;
 			children = (
 				EF31608A2A617077000BB17E /* CreateUserViewController.swift */,
+				EF3AB2222A6B1B5400AB4B3A /* CreateUserViewModel.swift */,
 			);
 			path = Create;
+			sourceTree = "<group>";
+		};
+		EF3AB22C2A6C7F3000AB4B3A /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9684502A4DB69B0020D86C /* MainViewController.swift */,
+				EF3AB22F2A6C7F7100AB4B3A /* MainViewModel.swift */,
+				EF3AB2312A6C80FA00AB4B3A /* MainDataSource.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		EF3AB22D2A6C7F4D00AB4B3A /* CommonUIView */ = {
+			isa = PBXGroup;
+			children = (
+				EF38ABAD2A697A2C000DBE12 /* CommonUIView.swift */,
+			);
+			path = CommonUIView;
+			sourceTree = "<group>";
+		};
+		EF3AB22E2A6C7F5E00AB4B3A /* SplashViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF96844E2A4DB68E0020D86C /* SplashViewController.swift */,
+			);
+			path = SplashViewController;
+			sourceTree = "<group>";
+		};
+		EF3AB2352A6C8D3200AB4B3A /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF3AB2242A6B2E7800AB4B3A /* FirebaseStorageManager.swift */,
+				EF3AB2262A6B31FE00AB4B3A /* FirebaseDatabaseManager.swift */,
+				EF3AB22A2A6C755700AB4B3A /* FirebaseAccountManager.swift */,
+			);
+			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
+		EF3AB2362A6C8D5500AB4B3A /* UserObject */ = {
+			isa = PBXGroup;
+			children = (
+				EF3AB2282A6B3E2000AB4B3A /* Users.swift */,
+			);
+			path = UserObject;
+			sourceTree = "<group>";
+		};
+		EF3AB2372A6C8D6E00AB4B3A /* ChartsManager */ = {
+			isa = PBXGroup;
+			children = (
+				EF4C4D8F2A4F094E00D06B56 /* ChartsManager.swift */,
+			);
+			path = ChartsManager;
 			sourceTree = "<group>";
 		};
 		EF4C4D9B2A4F18A900D06B56 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				EF4C4D8F2A4F094E00D06B56 /* ChartsManager.swift */,
-				EFEB365E2A642239001B782C /* PushManager.swift */,
+				EF3AB2372A6C8D6E00AB4B3A /* ChartsManager */,
+				EF3AB2362A6C8D5500AB4B3A /* UserObject */,
+				EF3AB2352A6C8D3200AB4B3A /* FirebaseManager */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -417,22 +483,22 @@
 			path = ProfileView;
 			sourceTree = "<group>";
 		};
-		EF4C4DCD2A51E46800D06B56 /* MainControllers */ = {
+		EF4C4DCD2A51E46800D06B56 /* MainUIViews */ = {
 			isa = PBXGroup;
 			children = (
-				EF96844D2A4DB6420020D86C /* LoginViewController */,
-				EF9684442A4DB6050020D86C /* GoalsViewController */,
-				EF9684432A4DB6030020D86C /* DashboradViewController */,
-				EF96844C2A4DB6400020D86C /* SettingsViewController */,
-				EF96844B2A4DB63E0020D86C /* SupportViewController */,
-				EF96844A2A4DB6340020D86C /* ProfileViewController */,
-				EF9684492A4DB6310020D86C /* RecipientsViewController */,
-				EF9684482A4DB62E0020D86C /* DepositCheckViewController */,
-				EF9684472A4DB61B0020D86C /* PayBillsViewController */,
-				EF9684462A4DB6190020D86C /* TransferViewController */,
-				EF9684452A4DB6080020D86C /* SpendAnalysisViewController */,
+				EF3AB22D2A6C7F4D00AB4B3A /* CommonUIView */,
+				EF9684442A4DB6050020D86C /* MainGoalsUIView */,
+				EF9684432A4DB6030020D86C /* MainDashboradUIView */,
+				EF96844C2A4DB6400020D86C /* MainSettingsUIView */,
+				EF96844B2A4DB63E0020D86C /* MainSupportUIView */,
+				EF96844A2A4DB6340020D86C /* MainProfileUIView */,
+				EF9684492A4DB6310020D86C /* MainRecipientsUIView */,
+				EF9684482A4DB62E0020D86C /* MainDepositCheckUIView */,
+				EF9684472A4DB61B0020D86C /* MainPayBillsUIView */,
+				EF9684462A4DB6190020D86C /* MainTransferUIView */,
+				EF9684452A4DB6080020D86C /* MainSpendAnalysisUIView */,
 			);
-			path = MainControllers;
+			path = MainUIViews;
 			sourceTree = "<group>";
 		};
 		EF4C4DCE2A51E48800D06B56 /* DetailsControllers */ = {
@@ -493,7 +559,7 @@
 				EF9684402A4DB5DD0020D86C /* Helpers */,
 				EF96843C2A4DB5400020D86C /* Resources */,
 				EF9684362A4DB52C0020D86C /* Info.plist */,
-				EF3160882A616F98000BB17E /* GoogleService-Info.plist */,
+				EF3AB2332A6C85F500AB4B3A /* GoogleService-Info.plist */,
 			);
 			path = SpenderApp;
 			sourceTree = "<group>";
@@ -512,8 +578,8 @@
 		EF96843D2A4DB5C70020D86C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EF9684682A4DB72C0020D86C /* MainViewController */,
-				EF4C4DCD2A51E46800D06B56 /* MainControllers */,
+				EF9684682A4DB72C0020D86C /* Controllers */,
+				EF4C4DCD2A51E46800D06B56 /* MainUIViews */,
 				EF4C4DCE2A51E48800D06B56 /* DetailsControllers */,
 			);
 			path = Controllers;
@@ -567,84 +633,84 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		EF9684432A4DB6030020D86C /* DashboradViewController */ = {
+		EF9684432A4DB6030020D86C /* MainDashboradUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF9684522A4DB6AC0020D86C /* DashboradViewController.swift */,
+				EF9684522A4DB6AC0020D86C /* MainDashboradUIView.swift */,
 			);
-			path = DashboradViewController;
+			path = MainDashboradUIView;
 			sourceTree = "<group>";
 		};
-		EF9684442A4DB6050020D86C /* GoalsViewController */ = {
+		EF9684442A4DB6050020D86C /* MainGoalsUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF9684542A4DB6B90020D86C /* GoalsViewController.swift */,
+				EF9684542A4DB6B90020D86C /* MainGoalsUIView.swift */,
 			);
-			path = GoalsViewController;
+			path = MainGoalsUIView;
 			sourceTree = "<group>";
 		};
-		EF9684452A4DB6080020D86C /* SpendAnalysisViewController */ = {
+		EF9684452A4DB6080020D86C /* MainSpendAnalysisUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF9684562A4DB6C70020D86C /* SpendAnalysisViewController.swift */,
+				EF9684562A4DB6C70020D86C /* MainSpendAnalysisUIView.swift */,
 			);
-			path = SpendAnalysisViewController;
+			path = MainSpendAnalysisUIView;
 			sourceTree = "<group>";
 		};
-		EF9684462A4DB6190020D86C /* TransferViewController */ = {
+		EF9684462A4DB6190020D86C /* MainTransferUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF9684582A4DB6D40020D86C /* TransferViewController.swift */,
+				EF9684582A4DB6D40020D86C /* MainTransferUIView.swift */,
 			);
-			path = TransferViewController;
+			path = MainTransferUIView;
 			sourceTree = "<group>";
 		};
-		EF9684472A4DB61B0020D86C /* PayBillsViewController */ = {
+		EF9684472A4DB61B0020D86C /* MainPayBillsUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF96845A2A4DB6E40020D86C /* PayBillsViewController.swift */,
+				EF96845A2A4DB6E40020D86C /* MainPayBillsUIView.swift */,
 			);
-			path = PayBillsViewController;
+			path = MainPayBillsUIView;
 			sourceTree = "<group>";
 		};
-		EF9684482A4DB62E0020D86C /* DepositCheckViewController */ = {
+		EF9684482A4DB62E0020D86C /* MainDepositCheckUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF96845C2A4DB6ED0020D86C /* DepositCheckViewController.swift */,
+				EF96845C2A4DB6ED0020D86C /* MainDepositCheckUIView.swift */,
 			);
-			path = DepositCheckViewController;
+			path = MainDepositCheckUIView;
 			sourceTree = "<group>";
 		};
-		EF9684492A4DB6310020D86C /* RecipientsViewController */ = {
+		EF9684492A4DB6310020D86C /* MainRecipientsUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF96845E2A4DB6F70020D86C /* RecipientsViewController.swift */,
+				EF96845E2A4DB6F70020D86C /* MainRecipientsUIView.swift */,
 			);
-			path = RecipientsViewController;
+			path = MainRecipientsUIView;
 			sourceTree = "<group>";
 		};
-		EF96844A2A4DB6340020D86C /* ProfileViewController */ = {
+		EF96844A2A4DB6340020D86C /* MainProfileUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF9684602A4DB7040020D86C /* ProfileViewController.swift */,
+				EF9684602A4DB7040020D86C /* MainProfileUIView.swift */,
 			);
-			path = ProfileViewController;
+			path = MainProfileUIView;
 			sourceTree = "<group>";
 		};
-		EF96844B2A4DB63E0020D86C /* SupportViewController */ = {
+		EF96844B2A4DB63E0020D86C /* MainSupportUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF9684622A4DB70D0020D86C /* SupportViewController.swift */,
+				EF9684622A4DB70D0020D86C /* MainSupportUIView.swift */,
 			);
-			path = SupportViewController;
+			path = MainSupportUIView;
 			sourceTree = "<group>";
 		};
-		EF96844C2A4DB6400020D86C /* SettingsViewController */ = {
+		EF96844C2A4DB6400020D86C /* MainSettingsUIView */ = {
 			isa = PBXGroup;
 			children = (
-				EF9684642A4DB7160020D86C /* SettingsViewController.swift */,
+				EF9684642A4DB7160020D86C /* MainSettingsUIView.swift */,
 			);
-			path = SettingsViewController;
+			path = MainSettingsUIView;
 			sourceTree = "<group>";
 		};
 		EF96844D2A4DB6420020D86C /* LoginViewController */ = {
@@ -656,14 +722,14 @@
 			path = LoginViewController;
 			sourceTree = "<group>";
 		};
-		EF9684682A4DB72C0020D86C /* MainViewController */ = {
+		EF9684682A4DB72C0020D86C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EF96844E2A4DB68E0020D86C /* SplashViewController.swift */,
-				EF9684502A4DB69B0020D86C /* MainViewController.swift */,
-				EF3160862A5DAC82000BB17E /* SubViewController.swift */,
+				EF3AB22E2A6C7F5E00AB4B3A /* SplashViewController */,
+				EF3AB22C2A6C7F3000AB4B3A /* MainViewController */,
+				EF96844D2A4DB6420020D86C /* LoginViewController */,
 			);
-			path = MainViewController;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		EF9684712A4DB79A0020D86C /* TableViewCells */ = {
@@ -821,7 +887,7 @@
 			files = (
 				EF9684352A4DB52C0020D86C /* LaunchScreen.storyboard in Resources */,
 				EF9684322A4DB52C0020D86C /* Assets.xcassets in Resources */,
-				EF3160892A616F98000BB17E /* GoogleService-Info.plist in Resources */,
+				EF3AB2342A6C85F500AB4B3A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,18 +898,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFEB365F2A642239001B782C /* PushManager.swift in Sources */,
 				EF96844F2A4DB68E0020D86C /* SplashViewController.swift in Sources */,
 				EF9684812A4DB82D0020D86C /* PinnedGoalsUIView.swift in Sources */,
 				EF9684892A4DB8720020D86C /* Extension+Textfield.swift in Sources */,
-				EF9684572A4DB6C70020D86C /* SpendAnalysisViewController.swift in Sources */,
+				EF9684572A4DB6C70020D86C /* MainSpendAnalysisUIView.swift in Sources */,
 				EF4C4DDA2A51E64300D06B56 /* GoalsAutoDepositUIView.swift in Sources */,
 				EF4C4DA62A4F4A9700D06B56 /* DonutChartsUIView.swift in Sources */,
 				EF96846A2A4DB7580020D86C /* SideBarTableViewCell.swift in Sources */,
 				EF4C4DCA2A51A60B00D06B56 /* MyInformationUIView.swift in Sources */,
 				EF4C4DD42A51E5B300D06B56 /* GoalsDetailChartsUIView.swift in Sources */,
+				EF3AB2272A6B31FE00AB4B3A /* FirebaseDatabaseManager.swift in Sources */,
 				EF4C4DAF2A4F59FC00D06B56 /* HorizontalAccountTransfersUIView.swift in Sources */,
-				EF9684632A4DB70D0020D86C /* SupportViewController.swift in Sources */,
+				EF9684632A4DB70D0020D86C /* MainSupportUIView.swift in Sources */,
 				EF2D00B22A52F6690077400F /* EditSavingsSelectAccountUIView.swift in Sources */,
 				EF4C4D902A4F094E00D06B56 /* ChartsManager.swift in Sources */,
 				EF9684672A4DB71F0020D86C /* LoginViewController.swift in Sources */,
@@ -851,34 +917,39 @@
 				EF4C4DCC2A51A61900D06B56 /* MyAccountsUIView.swift in Sources */,
 				EF4C4DC32A5050A500D06B56 /* TransActionsCollectionViewCell.swift in Sources */,
 				EF96847B2A4DB8050020D86C /* BankingUIView.swift in Sources */,
+				EF38ABAE2A697A2C000DBE12 /* CommonUIView.swift in Sources */,
 				EF9684852A4DB8570020D86C /* SideBarSection.swift in Sources */,
 				EF4C4D9D2A4F19B700D06B56 /* ActiveGoalsUIView.swift in Sources */,
 				EFD442A22A585B10005DB172 /* QuickActionsCollectionViewCell.swift in Sources */,
 				EF4C4DAD2A4F59BA00D06B56 /* VerticalAccountTransfersUIView.swift in Sources */,
 				EF4C4DC12A50502000D06B56 /* PinnedRecipientsCollectionViewCell.swift in Sources */,
 				EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */,
-				EF96845F2A4DB6F70020D86C /* RecipientsViewController.swift in Sources */,
+				EF96845F2A4DB6F70020D86C /* MainRecipientsUIView.swift in Sources */,
 				EF4C4DBD2A504D6100D06B56 /* PinnedReicipientsUIView.swift in Sources */,
 				EF9684792A4DB7FA0020D86C /* QuickActionsUIView.swift in Sources */,
 				EF4C4DA12A4F1F7F00D06B56 /* TotalSpendUIView.swift in Sources */,
 				EFA3C0D62A5445800067E2FB /* EditGoalViewController.swift in Sources */,
 				EF2D00B42A52F67B0077400F /* EditSavingMoneyBreakDownUIView.swift in Sources */,
 				EF4C4DD02A51E4EB00D06B56 /* GoalsDetailsViewController.swift in Sources */,
-				EF9684592A4DB6D40020D86C /* TransferViewController.swift in Sources */,
+				EF9684592A4DB6D40020D86C /* MainTransferUIView.swift in Sources */,
 				EF4C4DD62A51E60900D06B56 /* GoalsDetailUIView.swift in Sources */,
-				EF96845D2A4DB6ED0020D86C /* DepositCheckViewController.swift in Sources */,
+				EF96845D2A4DB6ED0020D86C /* MainDepositCheckUIView.swift in Sources */,
 				EF2D00BE2A52FA1A0077400F /* CreateGoalThree.swift in Sources */,
+				EF3AB22B2A6C755700AB4B3A /* FirebaseAccountManager.swift in Sources */,
+				EF3AB2302A6C7F7100AB4B3A /* MainViewModel.swift in Sources */,
 				EF4C4DAA2A4F4F0F00D06B56 /* CategoryCollectionViewCell.swift in Sources */,
 				EF2D00B62A52F6A40077400F /* EditChartsUIView.swift in Sources */,
+				EF3AB2232A6B1B5400AB4B3A /* CreateUserViewModel.swift in Sources */,
 				EF4C4DBF2A504ED100D06B56 /* RecentRecipientsUIView.swift in Sources */,
 				EF3160952A617721000BB17E /* LoginViewModel.swift in Sources */,
-				EF9684612A4DB7040020D86C /* ProfileViewController.swift in Sources */,
+				EF9684612A4DB7040020D86C /* MainProfileUIView.swift in Sources */,
 				EF31608B2A617077000BB17E /* CreateUserViewController.swift in Sources */,
 				EF4C4DD82A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift in Sources */,
 				EF96848D2A4DB8870020D86C /* Extension+ViewController.swift in Sources */,
 				EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */,
 				EF96847F2A4DB81B0020D86C /* SavingsGoalsUIView.swift in Sources */,
-				EF9684652A4DB7160020D86C /* SettingsViewController.swift in Sources */,
+				EF9684652A4DB7160020D86C /* MainSettingsUIView.swift in Sources */,
+				EF3AB2322A6C80FA00AB4B3A /* MainDataSource.swift in Sources */,
 				EF2D00BA2A52FA070077400F /* CreateGoalOne.swift in Sources */,
 				EF96846E2A4DB7790020D86C /* CreditUICollectionViewCell.swift in Sources */,
 				EF9684512A4DB69B0020D86C /* MainViewController.swift in Sources */,
@@ -888,19 +959,20 @@
 				EF4C4DB82A4F66B500D06B56 /* ActivityUIView.swift in Sources */,
 				EF9684702A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift in Sources */,
 				EF2D00B02A52F61A0077400F /* EditSavingsGoalsDetailsUIView.swift in Sources */,
-				EF3160872A5DAC82000BB17E /* SubViewController.swift in Sources */,
 				EFA3C0DA2A544FE50067E2FB /* CreateGoalSection.swift in Sources */,
 				EF4C4DC82A519FDC00D06B56 /* ProfileEditUIView.swift in Sources */,
-				EF96845B2A4DB6E40020D86C /* PayBillsViewController.swift in Sources */,
+				EF96845B2A4DB6E40020D86C /* MainPayBillsUIView.swift in Sources */,
 				EF9684772A4DB7EC0020D86C /* SideBarUIView.swift in Sources */,
 				EF4C4DA42A4F4A8D00D06B56 /* DateUIView.swift in Sources */,
-				EF9684532A4DB6AC0020D86C /* DashboradViewController.swift in Sources */,
-				EF9684552A4DB6B90020D86C /* GoalsViewController.swift in Sources */,
+				EF9684532A4DB6AC0020D86C /* MainDashboradUIView.swift in Sources */,
+				EF9684552A4DB6B90020D86C /* MainGoalsUIView.swift in Sources */,
 				EFA3C0D82A54458C0067E2FB /* CreateGoalViewController.swift in Sources */,
 				EF2D00B82A52F6B40077400F /* EditTransferUIView.swift in Sources */,
 				EF4C4DA82A4F4AA400D06B56 /* CategoryListUIView.swift in Sources */,
 				EF9684832A4DB8350020D86C /* GoalsUIView.swift in Sources */,
 				EF96848B2A4DB87B0020D86C /* Extension+Cells.swift in Sources */,
+				EF3AB2252A6B2E7800AB4B3A /* FirebaseStorageManager.swift in Sources */,
+				EF3AB2292A6B3E2000AB4B3A /* Users.swift in Sources */,
 				EFA3C0DC2A5454A60067E2FB /* MainCreateGoal.swift in Sources */,
 				EF4C4D9F2A4F1A7A00D06B56 /* SpendingGoalsCollectionViewCell.swift in Sources */,
 				EF4C4DB32A4F630400D06B56 /* TransferCollectionViewCell.swift in Sources */,

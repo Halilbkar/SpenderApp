@@ -8,7 +8,7 @@
 import UIKit
 
 protocol QuickActionsUIViewProtocol: AnyObject {
-    func tapped(toVC: SideBarSection)
+    func tapped(with toController: SideBarSection)
 }
 
 class QuickActionsUIView: UIView {
@@ -44,6 +44,8 @@ class QuickActionsUIView: UIView {
     }()
     
     weak var delegate: QuickActionsUIViewProtocol?
+    
+    var quickActions = SideBarSection.allCases
 
     override init(frame: CGRect) {
         super .init(frame: frame)
@@ -78,16 +80,21 @@ class QuickActionsUIView: UIView {
 extension QuickActionsUIView: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return quickActions.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: QuickActionsCollectionViewCell.identifier, for: indexPath) as! QuickActionsCollectionViewCell
         
+        cell.config(with: quickActions[indexPath.row])
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.delegate?.tapped(toVC: .goals)
+        
+        let selectController = SideBarSection.allCases[indexPath.row]
+        
+        self.delegate?.tapped(with: selectController)
     }
 }

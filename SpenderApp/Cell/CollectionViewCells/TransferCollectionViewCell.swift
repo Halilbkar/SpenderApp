@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class TransferCollectionViewCell: UICollectionViewCell {
     
@@ -14,7 +16,7 @@ class TransferCollectionViewCell: UICollectionViewCell {
         
         imageView.layer.cornerRadius = frame.size.width / 2
         imageView.backgroundColor = .red
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -45,5 +47,17 @@ class TransferCollectionViewCell: UICollectionViewCell {
     
     required init(coder: NSCoder) {
         fatalError()
+    }
+    
+    func config(user: User) {
+        if let url = URL(string: user.profileImageURL) {
+            DispatchQueue.global().async {
+                if let data = try? Data(contentsOf: url) {
+                    DispatchQueue.main.async {
+                        self.imageView.image = UIImage(data: data)
+                    }
+                }
+            }
+        }
     }
 }

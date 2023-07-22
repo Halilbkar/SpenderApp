@@ -31,12 +31,13 @@ class ProfileEditUIView: UIView {
         
         return button
     }()
-
+    
     override init(frame: CGRect) {
         super .init(frame: frame)
         
         addSubview(editButton)
         addSubview(imageView)
+        
     }
     
     override func layoutSubviews() {

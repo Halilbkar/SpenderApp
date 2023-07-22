@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>559749681022-ta18trk2p2s62kh2keke6jjbn7qegqkg.apps.googleusercontent.com</string>
+	<string>276590026614-s85kr977j7bcv0m934935jo932k9ik2t.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.559749681022-ta18trk2p2s62kh2keke6jjbn7qegqkg</string>
+	<string>com.googleusercontent.apps.276590026614-s85kr977j7bcv0m934935jo932k9ik2t</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCdgbOotb-yoS-0QZPU8nf7-Ra9yw7nAkw</string>
+	<string>AIzaSyBl1g7DbrfPmRc2GDJJIgg8MD_B6fuFh7g</string>
 	<key>GCM_SENDER_ID</key>
-	<string>559749681022</string>
+	<string>276590026614</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.Halilbkar.SpenderApp</string>
+	<string>com.HalilBkar.SpenderApp</string>
 	<key>PROJECT_ID</key>
-	<string>spenderbankapp</string>
+	<string>spenderapp-e8d0c</string>
 	<key>STORAGE_BUCKET</key>
-	<string>spenderbankapp.appspot.com</string>
+	<string>spenderapp-e8d0c.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:559749681022:ios:9442da43321b7b53a8ed2f</string>
+	<string>1:276590026614:ios:7ea5420768089a352ce457</string>
 </dict>
 </plist>
