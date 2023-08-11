@@ -15,52 +15,53 @@ class MainViewController: UIViewController {
     private lazy var headerView: UIView = {
         let view = UIView()
         
-        view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .black
         view.layer.cornerRadius = 32
+        view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
     }()
-    
+
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 20, y: 20, width: 32, height: 32))
-        
+
         imageView.image = UIImage(named: "logo")
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = imageView.frame.size.width / 2
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
+
         return imageView
-        
+
     }()
-    
+
     private lazy var headerLabel: UILabel = {
         let label = UILabel()
-        
+
         label.text = "Welcome back, Halil"
         label.font = .boldSystemFont(ofSize: 24)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
-        
+
         return label
     }()
-    
+
     private lazy var headerButton: UIButton = {
-        let button = UIButton()
+        var config = UIButton.Configuration.filled()
+  
+        config.cornerStyle = .capsule
+        config.buttonSize = .medium
+        config.image = UIImage(systemName: "list.bullet.circle")
+        config.baseBackgroundColor = .gray
+        config.baseForegroundColor = .white
         
-        button.configuration = .filled()
-        button.configuration?.cornerStyle = .capsule
-        button.configuration?.buttonSize = .medium
-        button.configuration?.image = UIImage(systemName: "list.bullet.circle")
-        button.configuration?.baseBackgroundColor = .gray
-        button.configuration?.baseForegroundColor = .white
-        
+        let button = UIButton(configuration: config)
+
         button.isSelected = true
         button.translatesAutoresizingMaskIntoConstraints = false
-        
+
         button.addTarget(self, action: #selector(headerButtonTapped), for: .touchUpInside)
-        
+
         return button
     }()
     
@@ -90,9 +91,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(named: "grey100")
-        
-        navigationItem.hidesBackButton = true
-        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+
         view.addSubview(headerView)
         view.addSubview(containerView)
         view.addSubview(sideBarUIView)
@@ -102,7 +102,9 @@ class MainViewController: UIViewController {
         headerView.addSubview(headerButton)
         
         viewModel.dataSource.delegate = self
+        viewModel.delegate = self
         
+        viewModel.getUserData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -110,7 +112,7 @@ class MainViewController: UIViewController {
         
         containerView.addSubview(SideBarSection.dashboard.view)
         
-        viewModel.fetchUserData(nameLabel: headerLabel, imageView: imageView)
+//        viewModel.fetchUserData(nameLabel: headerLabel, imageView: imageView)
     }
     
     override func viewWillLayoutSubviews() {
@@ -128,13 +130,12 @@ class MainViewController: UIViewController {
             imageView.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: CGFloat.dWidth(padding: 16)),
             imageView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 32)),
             imageView.widthAnchor.constraint(equalToConstant: CGFloat.dWidth(padding: 32)),
-            
+
             headerLabel.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: CGFloat.dHeight(padding: -20)),
             headerLabel.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: CGFloat.dWidth(padding: 12)),
-            headerLabel.widthAnchor.constraint(equalToConstant: CGFloat.dWidth(padding: 250)),
-            
+
             headerButton.bottomAnchor.constraint(equalTo: headerView.bottomAnchor, constant: CGFloat.dHeight(padding: -16)),
-            headerButton.leadingAnchor.constraint(equalTo: headerLabel.trailingAnchor),
+            headerButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: CGFloat.dWidth(padding: -20)),
             
             sideBarUIView.topAnchor.constraint(equalTo: headerView.bottomAnchor),
             sideBarUIView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -175,7 +176,11 @@ extension MainViewController: MainDataSourceDelegate {
         containerView.removeSubview()
         containerView.addSubview(selectSection.view)
     }
-    
-    
 }
 
+extension MainViewController: MainViewModelDelegate {
+    func fetchUser(name: String, profileImageURL: String) {
+        self.headerLabel.text = "Welcome back, \(name)!"
+        self.imageView.sd_setImage(with: URL(string: profileImageURL))
+    }
+}

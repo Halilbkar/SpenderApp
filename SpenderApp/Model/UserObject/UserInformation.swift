@@ -7,8 +7,10 @@
 
 import Foundation
 
-struct User {
+struct UserInformation {
+    let uid: String
     let firstName: String
     let lastName: String
-    let profileImageURL: String
+    let email: String
+    let profileImageURL: String?
 }

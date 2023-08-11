@@ -51,7 +51,7 @@
 		EF3AB2232A6B1B5400AB4B3A /* CreateUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2222A6B1B5400AB4B3A /* CreateUserViewModel.swift */; };
 		EF3AB2252A6B2E7800AB4B3A /* FirebaseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2242A6B2E7800AB4B3A /* FirebaseStorageManager.swift */; };
 		EF3AB2272A6B31FE00AB4B3A /* FirebaseDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2262A6B31FE00AB4B3A /* FirebaseDatabaseManager.swift */; };
-		EF3AB2292A6B3E2000AB4B3A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2282A6B3E2000AB4B3A /* Users.swift */; };
+		EF3AB2292A6B3E2000AB4B3A /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2282A6B3E2000AB4B3A /* UserInformation.swift */; };
 		EF3AB22B2A6C755700AB4B3A /* FirebaseAccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB22A2A6C755700AB4B3A /* FirebaseAccountManager.swift */; };
 		EF3AB2302A6C7F7100AB4B3A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB22F2A6C7F7100AB4B3A /* MainViewModel.swift */; };
 		EF3AB2322A6C80FA00AB4B3A /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3AB2312A6C80FA00AB4B3A /* MainDataSource.swift */; };
@@ -85,6 +85,13 @@
 		EF4C4DD62A51E60900D06B56 /* GoalsDetailUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DD52A51E60900D06B56 /* GoalsDetailUIView.swift */; };
 		EF4C4DD82A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DD72A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift */; };
 		EF4C4DDA2A51E64300D06B56 /* GoalsAutoDepositUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4C4DD92A51E64300D06B56 /* GoalsAutoDepositUIView.swift */; };
+		EF8F017B2A7126480003E971 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F017A2A7126480003E971 /* FirebaseAuthManager.swift */; };
+		EF8F017D2A7126A30003E971 /* FirebaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F017C2A7126A30003E971 /* FirebaseError.swift */; };
+		EF8F017F2A7126E30003E971 /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F017E2A7126E30003E971 /* GeneralError.swift */; };
+		EF8F01812A7127030003E971 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F01802A7127030003E971 /* HTTPMethod.swift */; };
+		EF8F01832A7127160003E971 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F01822A7127160003E971 /* NetworkError.swift */; };
+		EF8F01852A7144340003E971 /* StorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F01842A7144340003E971 /* StorManager.swift */; };
+		EF8F01872A7144480003E971 /* DatManager in Sources */ = {isa = PBXBuildFile; fileRef = EF8F01862A7144480003E971 /* DatManager */; };
 		EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9684282A4DB52B0020D86C /* AppDelegate.swift */; };
 		EF96842B2A4DB52B0020D86C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */; };
 		EF9684322A4DB52C0020D86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9684312A4DB52C0020D86C /* Assets.xcassets */; };
@@ -122,6 +129,9 @@
 		EFA3C0D82A54458C0067E2FB /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3C0D72A54458C0067E2FB /* CreateGoalViewController.swift */; };
 		EFA3C0DA2A544FE50067E2FB /* CreateGoalSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3C0D92A544FE50067E2FB /* CreateGoalSection.swift */; };
 		EFA3C0DC2A5454A60067E2FB /* MainCreateGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA3C0DB2A5454A60067E2FB /* MainCreateGoal.swift */; };
+		EFC024922A8198EC00B8BDCF /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC024912A8198EC00B8BDCF /* AuthManager.swift */; };
+		EFC024942A8198F500B8BDCF /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC024932A8198F500B8BDCF /* DatabaseManager.swift */; };
+		EFC024962A8198FF00B8BDCF /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC024952A8198FF00B8BDCF /* StorageManager.swift */; };
 		EFD442A22A585B10005DB172 /* QuickActionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD442A12A585B10005DB172 /* QuickActionsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -153,7 +163,7 @@
 		EF3AB2222A6B1B5400AB4B3A /* CreateUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewModel.swift; sourceTree = "<group>"; };
 		EF3AB2242A6B2E7800AB4B3A /* FirebaseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageManager.swift; sourceTree = "<group>"; };
 		EF3AB2262A6B31FE00AB4B3A /* FirebaseDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseManager.swift; sourceTree = "<group>"; };
-		EF3AB2282A6B3E2000AB4B3A /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		EF3AB2282A6B3E2000AB4B3A /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		EF3AB22A2A6C755700AB4B3A /* FirebaseAccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAccountManager.swift; sourceTree = "<group>"; };
 		EF3AB22F2A6C7F7100AB4B3A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		EF3AB2312A6C80FA00AB4B3A /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
@@ -186,6 +196,13 @@
 		EF4C4DD52A51E60900D06B56 /* GoalsDetailUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsDetailUIView.swift; sourceTree = "<group>"; };
 		EF4C4DD72A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsMoneyBreakdownUIView.swift; sourceTree = "<group>"; };
 		EF4C4DD92A51E64300D06B56 /* GoalsAutoDepositUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsAutoDepositUIView.swift; sourceTree = "<group>"; };
+		EF8F017A2A7126480003E971 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		EF8F017C2A7126A30003E971 /* FirebaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseError.swift; sourceTree = "<group>"; };
+		EF8F017E2A7126E30003E971 /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
+		EF8F01802A7127030003E971 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		EF8F01822A7127160003E971 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EF8F01842A7144340003E971 /* StorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorManager.swift; sourceTree = "<group>"; };
+		EF8F01862A7144480003E971 /* DatManager */ = {isa = PBXFileReference; lastKnownFileType = text; path = DatManager; sourceTree = "<group>"; };
 		EF9684252A4DB52B0020D86C /* SpenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9684282A4DB52B0020D86C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF96842A2A4DB52B0020D86C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +242,9 @@
 		EFA3C0D72A54458C0067E2FB /* CreateGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalViewController.swift; sourceTree = "<group>"; };
 		EFA3C0D92A544FE50067E2FB /* CreateGoalSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalSection.swift; sourceTree = "<group>"; };
 		EFA3C0DB2A5454A60067E2FB /* MainCreateGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCreateGoal.swift; sourceTree = "<group>"; };
+		EFC024912A8198EC00B8BDCF /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = SpenderApp/Manager/AuthManager.swift; sourceTree = SOURCE_ROOT; };
+		EFC024932A8198F500B8BDCF /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		EFC024952A8198FF00B8BDCF /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		EFD442A12A585B10005DB172 /* QuickActionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -354,6 +374,14 @@
 			path = CreateGoal;
 			sourceTree = "<group>";
 		};
+		EF2F40C02A83C5B500371D18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF3AB2362A6C8D5500AB4B3A /* UserObject */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EF3160932A617714000BB17E /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +432,9 @@
 				EF3AB2242A6B2E7800AB4B3A /* FirebaseStorageManager.swift */,
 				EF3AB2262A6B31FE00AB4B3A /* FirebaseDatabaseManager.swift */,
 				EF3AB22A2A6C755700AB4B3A /* FirebaseAccountManager.swift */,
+				EF8F017A2A7126480003E971 /* FirebaseAuthManager.swift */,
+				EF8F01842A7144340003E971 /* StorManager.swift */,
+				EF8F01862A7144480003E971 /* DatManager */,
 			);
 			path = FirebaseManager;
 			sourceTree = "<group>";
@@ -411,7 +442,7 @@
 		EF3AB2362A6C8D5500AB4B3A /* UserObject */ = {
 			isa = PBXGroup;
 			children = (
-				EF3AB2282A6B3E2000AB4B3A /* Users.swift */,
+				EF3AB2282A6B3E2000AB4B3A /* UserInformation.swift */,
 			);
 			path = UserObject;
 			sourceTree = "<group>";
@@ -427,8 +458,8 @@
 		EF4C4D9B2A4F18A900D06B56 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				EFC024902A8198D900B8BDCF /* FireManager */,
 				EF3AB2372A6C8D6E00AB4B3A /* ChartsManager */,
-				EF3AB2362A6C8D5500AB4B3A /* UserObject */,
 				EF3AB2352A6C8D3200AB4B3A /* FirebaseManager */,
 			);
 			path = Manager;
@@ -553,8 +584,9 @@
 			isa = PBXGroup;
 			children = (
 				EF96843D2A4DB5C70020D86C /* Controllers */,
-				EF96843E2A4DB5CF0020D86C /* Cell */,
 				EF96843F2A4DB5D40020D86C /* Companents */,
+				EF96843E2A4DB5CF0020D86C /* Cell */,
+				EF2F40C02A83C5B500371D18 /* Model */,
 				EF4C4D9B2A4F18A900D06B56 /* Manager */,
 				EF9684402A4DB5DD0020D86C /* Helpers */,
 				EF96843C2A4DB5400020D86C /* Resources */,
@@ -629,6 +661,10 @@
 			children = (
 				EF9684842A4DB8570020D86C /* SideBarSection.swift */,
 				EFA3C0D92A544FE50067E2FB /* CreateGoalSection.swift */,
+				EF8F017C2A7126A30003E971 /* FirebaseError.swift */,
+				EF8F017E2A7126E30003E971 /* GeneralError.swift */,
+				EF8F01802A7127030003E971 /* HTTPMethod.swift */,
+				EF8F01822A7127160003E971 /* NetworkError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -787,6 +823,16 @@
 			path = GoalsView;
 			sourceTree = "<group>";
 		};
+		EFC024902A8198D900B8BDCF /* FireManager */ = {
+			isa = PBXGroup;
+			children = (
+				EFC024912A8198EC00B8BDCF /* AuthManager.swift */,
+				EFC024932A8198F500B8BDCF /* DatabaseManager.swift */,
+				EFC024952A8198FF00B8BDCF /* StorageManager.swift */,
+			);
+			path = FireManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -898,6 +944,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8F017B2A7126480003E971 /* FirebaseAuthManager.swift in Sources */,
 				EF96844F2A4DB68E0020D86C /* SplashViewController.swift in Sources */,
 				EF9684812A4DB82D0020D86C /* PinnedGoalsUIView.swift in Sources */,
 				EF9684892A4DB8720020D86C /* Extension+Textfield.swift in Sources */,
@@ -915,6 +962,8 @@
 				EF9684672A4DB71F0020D86C /* LoginViewController.swift in Sources */,
 				EF9684872A4DB86A0020D86C /* Extension+CGFloat.swift in Sources */,
 				EF4C4DCC2A51A61900D06B56 /* MyAccountsUIView.swift in Sources */,
+				EF8F01812A7127030003E971 /* HTTPMethod.swift in Sources */,
+				EFC024922A8198EC00B8BDCF /* AuthManager.swift in Sources */,
 				EF4C4DC32A5050A500D06B56 /* TransActionsCollectionViewCell.swift in Sources */,
 				EF96847B2A4DB8050020D86C /* BankingUIView.swift in Sources */,
 				EF38ABAE2A697A2C000DBE12 /* CommonUIView.swift in Sources */,
@@ -926,6 +975,7 @@
 				EF9684292A4DB52B0020D86C /* AppDelegate.swift in Sources */,
 				EF96845F2A4DB6F70020D86C /* MainRecipientsUIView.swift in Sources */,
 				EF4C4DBD2A504D6100D06B56 /* PinnedReicipientsUIView.swift in Sources */,
+				EF8F01832A7127160003E971 /* NetworkError.swift in Sources */,
 				EF9684792A4DB7FA0020D86C /* QuickActionsUIView.swift in Sources */,
 				EF4C4DA12A4F1F7F00D06B56 /* TotalSpendUIView.swift in Sources */,
 				EFA3C0D62A5445800067E2FB /* EditGoalViewController.swift in Sources */,
@@ -935,6 +985,7 @@
 				EF4C4DD62A51E60900D06B56 /* GoalsDetailUIView.swift in Sources */,
 				EF96845D2A4DB6ED0020D86C /* MainDepositCheckUIView.swift in Sources */,
 				EF2D00BE2A52FA1A0077400F /* CreateGoalThree.swift in Sources */,
+				EFC024942A8198F500B8BDCF /* DatabaseManager.swift in Sources */,
 				EF3AB22B2A6C755700AB4B3A /* FirebaseAccountManager.swift in Sources */,
 				EF3AB2302A6C7F7100AB4B3A /* MainViewModel.swift in Sources */,
 				EF4C4DAA2A4F4F0F00D06B56 /* CategoryCollectionViewCell.swift in Sources */,
@@ -942,6 +993,7 @@
 				EF3AB2232A6B1B5400AB4B3A /* CreateUserViewModel.swift in Sources */,
 				EF4C4DBF2A504ED100D06B56 /* RecentRecipientsUIView.swift in Sources */,
 				EF3160952A617721000BB17E /* LoginViewModel.swift in Sources */,
+				EF8F017D2A7126A30003E971 /* FirebaseError.swift in Sources */,
 				EF9684612A4DB7040020D86C /* MainProfileUIView.swift in Sources */,
 				EF31608B2A617077000BB17E /* CreateUserViewController.swift in Sources */,
 				EF4C4DD82A51E62000D06B56 /* GoalsMoneyBreakdownUIView.swift in Sources */,
@@ -956,6 +1008,7 @@
 				EF96847D2A4DB80E0020D86C /* CreditUIView.swift in Sources */,
 				EF96846C2A4DB76E0020D86C /* BankingCollectionViewCell.swift in Sources */,
 				EF4C4DBA2A4F677000D06B56 /* PayeesCollectionViewCell.swift in Sources */,
+				EF8F017F2A7126E30003E971 /* GeneralError.swift in Sources */,
 				EF4C4DB82A4F66B500D06B56 /* ActivityUIView.swift in Sources */,
 				EF9684702A4DB78F0020D86C /* SavingsGoalsCollectionViewCell.swift in Sources */,
 				EF2D00B02A52F61A0077400F /* EditSavingsGoalsDetailsUIView.swift in Sources */,
@@ -972,14 +1025,17 @@
 				EF9684832A4DB8350020D86C /* GoalsUIView.swift in Sources */,
 				EF96848B2A4DB87B0020D86C /* Extension+Cells.swift in Sources */,
 				EF3AB2252A6B2E7800AB4B3A /* FirebaseStorageManager.swift in Sources */,
-				EF3AB2292A6B3E2000AB4B3A /* Users.swift in Sources */,
+				EF8F01852A7144340003E971 /* StorManager.swift in Sources */,
+				EF3AB2292A6B3E2000AB4B3A /* UserInformation.swift in Sources */,
 				EFA3C0DC2A5454A60067E2FB /* MainCreateGoal.swift in Sources */,
 				EF4C4D9F2A4F1A7A00D06B56 /* SpendingGoalsCollectionViewCell.swift in Sources */,
 				EF4C4DB32A4F630400D06B56 /* TransferCollectionViewCell.swift in Sources */,
 				EF4C4DC52A5050DD00D06B56 /* TransActionsUIView.swift in Sources */,
+				EF8F01872A7144480003E971 /* DatManager in Sources */,
 				EF4C4DB12A4F5A0B00D06B56 /* RecentReicipientsTransferUIView.swift in Sources */,
 				EF4C4DB62A4F66AB00D06B56 /* PayUView.swift in Sources */,
 				EF2D00BC2A52FA110077400F /* CreateGoalTwo.swift in Sources */,
+				EFC024962A8198FF00B8BDCF /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

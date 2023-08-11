@@ -130,7 +130,6 @@ class LoginViewController: UIViewController {
         oneStackView.addArrangedSubview(passwordTextField)
         
         viewModel.delegate = self
-        viewModel.currentUser()
     }
     
     override func viewWillLayoutSubviews() {
@@ -167,7 +166,8 @@ class LoginViewController: UIViewController {
     
     @objc private func loginButtonTapped() {
         guard let username = userNameTextField.text, let password = passwordTextField.text else { return }
-        viewModel.userSignIn(to: username, to: password)
+//        viewModel.userSignIn(to: username, to: password)
+        viewModel.login(email: username, password: password)
     }
     
     @objc private func createButtonTapped() {
@@ -176,7 +176,8 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func googleSıgnInButtonTapped() {
-        viewModel.googleSıgnInConfigure(self)
+//        viewModel.googleSıgnInConfigure(self)
+        viewModel.googleLogin()
     }
     
     @objc private func faceIDTapped() {

@@ -10,13 +10,13 @@ import UIKit
 class TransActionsCollectionViewCell: UICollectionViewCell {
     
     private lazy var imageView: UIImageView = {
-        let imageView = UIImageView()
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 58, height: 58))
         
-        imageView.backgroundColor = .red
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = imageView.frame.size.width / 2
         imageView.clipsToBounds = true
-        imageView.contentMode = .scaleAspectFit
-        
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.backgroundColor = .red
         
         return imageView
     }()

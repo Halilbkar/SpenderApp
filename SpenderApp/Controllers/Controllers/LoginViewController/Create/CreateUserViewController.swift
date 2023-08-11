@@ -196,7 +196,9 @@ class CreateUserViewController: UIViewController {
               let surname = surnameTextField.text,
               let selectedImage = profileImageView.image else { return }
         
-        viewModel.createUser(email: username, password: password, firstName: name, lastName: surname, profileImage: selectedImage)
+//        viewModel.createUser(email: username, password: password, firstName: name, lastName: surname, profileImage: selectedImage)
+        
+        viewModel.signUp(email: username, password: password, firstName: name, lastName: surname, profileImage: selectedImage)
     }
     
     

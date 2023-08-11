@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import SDWebImage
 
 class TransferCollectionViewCell: UICollectionViewCell {
     
@@ -15,9 +16,10 @@ class TransferCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView()
         
         imageView.layer.cornerRadius = frame.size.width / 2
-        imageView.backgroundColor = .red
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
+        imageView.layer.borderWidth = 2
+        imageView.layer.borderColor = UIColor.white.cgColor
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -49,15 +51,8 @@ class TransferCollectionViewCell: UICollectionViewCell {
         fatalError()
     }
     
-    func config(user: User) {
-        if let url = URL(string: user.profileImageURL) {
-            DispatchQueue.global().async {
-                if let data = try? Data(contentsOf: url) {
-                    DispatchQueue.main.async {
-                        self.imageView.image = UIImage(data: data)
-                    }
-                }
-            }
-        }
+    func config(user: UserInformation) {
+        guard let imageUrl = user.profileImageURL else { return }
+        imageView.sd_setImage(with: URL(string: imageUrl))
     }
 }

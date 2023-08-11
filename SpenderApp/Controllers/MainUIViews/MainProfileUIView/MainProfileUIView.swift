@@ -44,9 +44,7 @@ class MainProfileUIView: CommonUIView {
         
         return view
     }()
-            
-    var photoURL: URL?
-    
+                
     override init(frame: CGRect) {
         super .init(frame: frame)
         
@@ -72,18 +70,18 @@ class MainProfileUIView: CommonUIView {
             scrollView.bottomAnchor.constraint(equalTo: bottomAnchor),
         
             profileEditUIView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: CGFloat.dHeight(padding: 24)),
-            profileEditUIView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            profileEditUIView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            profileEditUIView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            profileEditUIView.trailingAnchor.constraint(equalTo: trailingAnchor),
             profileEditUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 168)),
             
             myInformationUIView.topAnchor.constraint(equalTo: profileEditUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 24)),
-            myInformationUIView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            myInformationUIView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            myInformationUIView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            myInformationUIView.trailingAnchor.constraint(equalTo: trailingAnchor),
             myInformationUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 480)),
             
             myAccountsUIView.topAnchor.constraint(equalTo: myInformationUIView.bottomAnchor, constant: CGFloat.dHeight(padding: 24)),
-            myAccountsUIView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            myAccountsUIView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            myAccountsUIView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            myAccountsUIView.trailingAnchor.constraint(equalTo: trailingAnchor),
             myAccountsUIView.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 180))
         ])
     }

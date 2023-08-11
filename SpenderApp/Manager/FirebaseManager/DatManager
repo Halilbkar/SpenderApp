@@ -1,0 +1,71 @@
+////
+////  DatabaseManager.swift
+////  SpenderApp
+////
+////  Created by Halil Bakar on 26.07.2023.
+////
+//
+//import Foundation
+//import FirebaseDatabase
+//
+//enum DatabaseError: Error {
+//    case setValueError
+//    case getValueError
+//    case removeValueError
+//    // Diğer hata durumları buraya eklenebilir.
+//}
+//
+//protocol DatabaseManagerProtocol {
+//    func setValue(_ value: Any, atPath path: String, completion: @escaping (Result<Void, DatabaseError>) -> Void)
+//    func getValue(atPath path: String, completion: @escaping (Result<Any?, DatabaseError>) -> Void)
+//    func removeValue(atPath path: String, completion: @escaping (Result<Void, DatabaseError>) -> Void)
+//}
+//
+//final class DatabaseManager {
+//    
+//    static let shared = DatabaseManager()
+//    private let database = Database.database()
+//    
+//    private init() {}
+//}
+//
+//extension DatabaseManager: DatabaseManagerProtocol {
+//    
+//    func setValue(_ value: Any, atPath path: String, completion: @escaping (Result<Void, DatabaseError>) -> Void) {
+//        let ref = database.reference(withPath: path)
+//        ref.setValue(value) { error, _ in
+//            if let error = error {
+//                debugPrint(error)
+//                completion(.failure(.setValueError))
+//            } else {
+//                completion(.success(()))
+//            }
+//        }
+//    }
+//    
+//    func getValue(atPath path: String, completion: @escaping (Result<Any?, DatabaseError>) -> Void) {
+//            let ref = database.reference(withPath: path)
+//            ref.getData { error, snapshot in
+//                if let error = error {
+//                    debugPrint(error)
+//                    completion(.failure(.getValueError))
+//                } else if let value = snapshot?.value {
+//                    completion(.success(value))
+//                } else {
+//                    completion(.success(nil))
+//                }
+//            }
+//        }
+//    
+//    func removeValue(atPath path: String, completion: @escaping (Result<Void, DatabaseError>) -> Void) {
+//        let ref = database.reference(withPath: path)
+//        ref.removeValue { error, _ in
+//            if let error = error {
+//                debugPrint(error)
+//                completion(.failure(.removeValueError))
+//            } else {
+//                completion(.success(()))
+//            }
+//        }
+//    }
+//}

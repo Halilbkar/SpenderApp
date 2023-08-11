@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class RecentRecipientsUIView: UIView {
     
@@ -49,7 +50,7 @@ class RecentRecipientsUIView: UIView {
         return collectionView
     }()
     
-    var users: [User] = []
+    var users: [UserInformation] = []
     
     override init(frame: CGRect) {
         super .init(frame: frame)
@@ -86,29 +87,39 @@ class RecentRecipientsUIView: UIView {
         fatalError()
     }
     
+//    func fetch() {
+//        let allUsersRef = Database.database().reference().child("users")
+//
+//        allUsersRef.observe(.value) { (snapshot, error) in // Hata mesajını ekledik
+//            if error != nil {
+//                print("Veriler alınamadı")
+//                return
+//            }
+//
+//            for case let childSnapshot as DataSnapshot in snapshot.children {
+//                if let userDict = childSnapshot.value as? [String: Any],
+//                   let firstName = userDict["firstName"] as? String,
+//                   let lastName = userDict["lastName"] as? String,
+//                   let profileImageURL = userDict["profileImageURL"] as? String {
+//                    let user = User(firstName: firstName, lastName: lastName, profileImageURL: profileImageURL)
+//                    self.users.append(user)
+//                }
+//            }
+//            self.transferCollectionView.reloadData()
+//        }
+//    }
+    
     func fetch() {
-        let allUsersRef = Database.database().reference().child("users")
-        
-        allUsersRef.observe(.value) { (snapshot, error) in // Hata mesajını ekledik
-            if error != nil {
-                print("Veriler alınamadı")
-                return
+        DatabaseManager.shared.getUserInformationForAllUsers { result in
+            switch result {
+            case .success(let users):
+                self.users = users
+                self.transferCollectionView.reloadData()
+                print("Tüm kullanıcılar: \(users)")
+                
+            case .failure(let error):
+                print("Tüm kullanıcılar çekilirken hata oluştu: \(error)")
             }
-            
-            self.users = []
-            
-            for case let childSnapshot as DataSnapshot in snapshot.children {
-                if let userDict = childSnapshot.value as? [String: Any],
-                   let firstName = userDict["firstName"] as? String,
-                   let lastName = userDict["lastName"] as? String,
-                   let profileImageURL = userDict["profileImageURL"] as? String {
-                    let user = User(firstName: firstName, lastName: lastName, profileImageURL: profileImageURL)
-                    self.users.append(user)
-                }
-            }
-            
-            // CollectionView'ı güncelleme
-            self.transferCollectionView.reloadData()
         }
     }
 }

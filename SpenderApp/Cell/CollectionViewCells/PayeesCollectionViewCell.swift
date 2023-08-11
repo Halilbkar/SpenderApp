@@ -10,12 +10,13 @@ import UIKit
 class PayeesCollectionViewCell: UICollectionViewCell {
     
     private lazy var imageView: UIImageView = {
-        let imageView = UIImageView()
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 48, height: 48))
         
-        imageView.backgroundColor = .red
-        imageView.contentMode = .scaleAspectFit
-        
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = imageView.frame.size.width / 2
+        imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.backgroundColor = .red
         
         return imageView
     }()

@@ -225,7 +225,7 @@ class MyInformationUIView: UIView {
             firstNameTextField.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 44)),
             
             genderTextField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: CGFloat.dHeight(padding: 24)),
-            genderTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dHeight(padding: -16)),
+            genderTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: CGFloat.dWidth(padding: -16)),
             genderTextField.heightAnchor.constraint(equalToConstant: CGFloat.dHeight(padding: 44)),
             
             oneStackView.topAnchor.constraint(equalTo: firstNameTextField.bottomAnchor, constant: CGFloat.dHeight(padding: 20)),
